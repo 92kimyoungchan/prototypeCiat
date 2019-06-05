@@ -139,7 +139,7 @@ input {
   margin-right: auto;
 }
 
-/* */
+/*헤더css */
 header {}
 
 header .headerWrap {
@@ -302,7 +302,9 @@ li.uberColumn ul li a {
   display: inline-block;
   line-height: 46px;
 }
+/*헤더css 끝*/
 
+/*메인- 롤링배너*/
 .rollingBanner {
 
 padding: 45px 0;
@@ -457,3 +459,4 @@ left: 0;
 
 
 }
+/*메인- 롤링배너 ===================================================================*/
