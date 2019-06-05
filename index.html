@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mainVisualCarocel.css">
+
 	<style>
 
 	</style>
@@ -161,8 +163,66 @@
 			</div>
 		</div>
 	</header>
+
 	<div id="main">
+<!--mainVisual carocel -->
+<section id="mainVisual">
+		<ul class="visual_wrap">
+			<li style="background-image: url(http://www.sait.samsung.co.kr/webfile/banner/201904190848251__GRO_0418.png); display: none; opacity: 0;">
+					<div class="visual_txt">
+						<div class="txt_wrap">
+							<h3>Global Research Outreach 2019</h3>
+							<p>(22<sup>nd</sup> of April ~ 25<sup>th</sup> of June)
+						</p><p>
+						We annually call for innovative research proposals, open to world’s leading universities.
+						</p><p></p>
+	                <a href="/saithome/about/collabo_apply.do#subTitle">Read more</a>
+							</div>
+					</div>
+          <!-- 관리자에서 영상 올리면 여기에 추가 해주시면 됩니다.-->
+          <!-- 접근성 설명 노출-->
+					<p class="hidden-txt">
+						Global Research Outreach 2019</p>
+				</li>
+			<li style="background-image: url(&quot;http://www.sait.samsung.co.kr/webfile/banner/201808101505331__main_img_03.jpg&quot;); display: block; opacity: 1;">
+					<div class="visual_txt">
+						<div class="txt_wrap">
+							<h3>Boundless Search <br>for Breakthroughs</h3>
+							<p>SAIT is Samsung‘s R&amp;D hub, <br>established as the incubator for cutting-edge technologies</p>
+			                <a href="/saithome/about/who.do">Read more</a>
+							</div>
+					</div>
+          <!-- 관리자에서 영상 올리면 여기에 추가 해주시면 됩니다.-->
+          <!-- 접근성 설명 노출-->
+					<p class="hidden-txt">Boundless Search for Breakthroughs</p>
+				</li>
+			<li style="background-image: url(&quot;http://www.sait.samsung.co.kr/webfile/banner/201808101507391__main_img_02.jpg&quot;); display: none; opacity: 0;">
+					<div class="visual_txt">
+						<div class="txt_wrap">
+							<h3>Changing the World<br>through Creative Research</h3>
+							<p>SAIT creates disruptive technologies as well as new technology convergence <br> combining Samsung‘s most advanced technologies</p>
+			                <a href="/saithome/research/what.do">Read more</a>
+							</div>
+					</div>
+          <!-- 관리자에서 영상 올리면 여기에 추가 해주시면 됩니다.-->
+          <!-- 접근성 설명 노출-->
+					<p class="hidden-txt">
+						Changing the World through Creative Research</p>
+				</li>
+			</ul>
+		<div id="navBtn">
+			<button type="button" class="prev">prev btn</button>
+			<button type="button" class="next">next btn</button>
+		</div>
+		<ul id="indiBtn">
+			<li><button type="button" class="">1</button></li>
+					 <li><button type="button" class="active">2</button></li>
+					 <li><button type="button" class="">3</button></li>
+					 </ul>
+	</section>
+
 		<!-- 롤링배너 -->
+	<section>
 		<div class="rollingBanner">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
@@ -352,6 +412,45 @@
 				<div class="swiper-scrollbar"></div>
 			</div>
 		</div>
+	</section>
+<section>
+	<div class="clinicalBanner-container">
+		<div class="clinicalBanner-imgWrap">
+				<img src="/main/clinicalBanner.png" alt="임상시험이란?" title="임상시험이란?">
+		</div>
+		<div class="clinicalBanner-selectBox">
+			<div class="selectContainer big">
+				<select class="js-example-basic-single" id="" name="">
+					<option value="" selected>건전인 대상 임상시험 찾기</option>
+					<option value="" >테스트</option>
+					<option value="" >테스트</option>
+				</select>
+			</div>
+			<div class="selectContainer big">
+				<select class="js-example-basic-single" id="" name="">
+					<option value="" selected>성별</option>
+					<option value="" >남성</option>
+					<option value="" >여성</option>
+				</select>
+			</div>
+			<div class="selectContainer big">
+				<select class="js-example-basic-single" id="" name="">
+					<option value="" selected>대상자</option>
+					<option value="" >테스트</option>
+					<option value="" >테스트</option>
+				</select>
+			</div>
+			<div class="selectContainer big">
+				<select class="js-example-basic-single" id="" name="">
+					<option value="" selected>임상시험 종류</option>
+					<option value="" >테스트</option>
+					<option value="" >테스트</option>
+				</select>
+			</div>
+
+		</div>
+	</div>
+</section>
 	</div>
 
 	<script src="js/vendor/jquery-3.4.1.min.js"></script>
