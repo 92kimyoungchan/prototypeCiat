@@ -1,44 +1,88 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'Noto Sans KR';
-  font-style: light;
+  font-family: 'Noto Sans CJK KR';
+  font-style: Thin;
+  font-weight: 100;
+  src:local(※),
+    url("../fonts/NotoSansCJKKr-Thin.woff") format('woff'),
+    url("../fonts/NotoSansCJKKr-Thin.otf") format('opentype'),
+    url('../fonts/NotoSansCJKKr-Thin?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: Light;
   font-weight: 300;
-  src: url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2") format('woff2'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff") format('woff'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf") format('opentype');
+  src:local(※),
+    url("../fonts/NotoSansCJKKr-Light.woff") format('woff'),
+    url("../fonts/NotoSansCJKKr-Light.otf") format('opentype'),
+    url('../fonts/NotoSansCJKKr-Light?#iefix') format('embedded-opentype');
 }
 
+
 @font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
+  font-family: 'Noto Sans CJK KR';
+  font-style: DemiLight;
+  font-weight: 350;
+  src:local(※),
+    url("../fonts/NotoSansCJKKr-DemiLight.woff") format('woff'),
+    url("../fonts/NotoSansCJKKr-DemiLight.otf") format('opentype'),
+    url('../fonts/NotoSansCJKKr-DemiLight?#iefix') format('embedded-opentype');
+}
+
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: Regular;
   font-weight: 400;
-  src: url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+  src:local(※),
+    url("../fonts/NotoSansCJKKr-Regular.woff") format('woff'),
+    url("../fonts/NotoSansCJKKr-Regular.otf") format('opentype'),
+    url('../fonts/NotoSansCJKKr-Regular?#iefix') format('embedded-opentype');
 }
 
+
 @font-face {
-  font-family: 'Noto Sans KR';
-  font-style: medium;
+  font-family: 'Noto Sans CJK KR';
+  font-style: Medium;
   font-weight: 500;
-  src: url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2") format('woff2'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff") format('woff'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf") format('opentype');
+  src:local(※),
+    url("../fonts/NotoSansCJKKr-Medium.woff") format('woff'),
+    url("../fonts/NotoSansCJKKr-Medium.otf") format('opentype'),
+    url('../fonts/NotoSansCJKKr-Medium?#iefix') format('embedded-opentype');
 }
 
+
 @font-face {
-  font-family: 'Noto Sans KR';
-  font-style: bold;
+  font-family: 'Noto Sans CJK KR';
+  font-style: Bold;
   font-weight: 700;
-  src: url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2") format('woff2'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff") format('woff'),
-    url("http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf") format('opentype');
+  src:local(※),
+    url("../fonts/NotoSansCJKKr-Bold.woff") format('woff'),
+    url("../fonts/NotoSansCJKKr-Bold.otf") format('opentype'),
+    url('../fonts/NotoSansCJKKr-Bold?#iefix') format('embedded-opentype');
+}
+
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: Black;
+  font-weight: 900;
+  src:local(※),
+    url("../fonts/NotoSansCJKKr-Black.woff") format('woff'),
+    url("../fonts/NotoSansCJKKr-Black.otf") format('opentype'),
+    url('../fonts/NotoSansCJKKr-Black?#iefix') format('embedded-opentype');
+}
+
+
+.font-normal{
+  font-weight: normal;
 }
 
 html, body {
   margin: 0 auto;
-  font-family: 'NanumSquare', 'Roboto', 'NOTO SANS KR', sans-serif;
+  font-family: 'Noto Sans CJK KR';
   padding: 0;
   position: relative;
   text-transform: initial;
@@ -66,7 +110,7 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 100;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
@@ -91,7 +135,7 @@ h2 {
 }
 
 p {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 25px;
   word-spacing: 0px;
   color: #7d7d7d;
