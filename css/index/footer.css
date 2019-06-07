@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
-.footer-wrap {
+footer {
   width: 100%;
   background: #202737;
-  padding: 60px;
-  display: flex;
-  justify-content: space-evenly;
+}
+
+.footer-wrap {
+  width: 67%;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
 .footer-wrap .imgWrap {
@@ -15,4 +18,26 @@
 
 .footer-content {
   float: left;
+}
+
+.footer-wrap .imgWrap {
+  width: 150px;
+  margin: 31px 0;
+}
+
+.footer-content {
+  width: calc(100% - 150px);
+  margin: 0 auto;
+  padding-left: 150px;
+}
+
+.footer-header, .footer-body {
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 20px;
+  color: #9B9B9B;
+  font-family: "NanumSquare";
+  font-weight: 400;
 }

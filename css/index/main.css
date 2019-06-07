@@ -1,19 +1,5 @@
 @charset "UTF-8";
 
-.dropdown-box {
-  width: 1290px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 110px;
-}
-
-.dropdown-wrap {
-  background: #4985ED;
-  padding: 10px;
-}
-
 .card-content .context h6 b {
   font-weight: 400;
   position: relative;
@@ -22,16 +8,22 @@
 
 .card-content .context h6 {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 
+.card-content .context h6:last-of-type {
+  color: #434343;
+  letter-spacing: -0.3px;
+}
+
 .card-content .context h2 {
-  font-size: 19px;
-  letter-spacing: -0.41px;
-  font-weight: 450;
+  font-size: 25px;
+  font-weight: 600;
   margin: 10px 0 15px 0;
   padding-bottom: 0;
+  color: #434343;
+  letter-spacing: -0.3px;
 }
 
 .card-content .context h6 b:before {
@@ -58,6 +50,7 @@
   margin: 0 10px 10px 0;
   padding: 20px 30px;
   border: 1px solid #C2C2C2;
+  box-shadow: 0px 0px 3px 1.5px rgba(183, 183, 183, 0.3);
 }
 
 .card-content.blue {
@@ -83,4 +76,49 @@
 .banner-button {
   position: absolute;
   top: 0;
+}
+
+.banner-textWrap {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  cursor: pointer;
+}
+
+.banner-textWrap p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #434343;
+}
+
+span.arrow {
+  position: relative;
+}
+
+span.arrow:before {
+  content: '';
+  height: 13px;
+  width: 10px;
+  display: block;
+  border: 1.5px solid #434343;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  transform: rotate(-55deg);
+  position: absolute;
+  top: 13px;
+  left: 79px;
+}
+
+span.arrow:after {
+  content: '';
+  height: 1.5px;
+  width: 25px;
+  display: block;
+  background: #434343;
+  top: 19px;
+  position: absolute;
+  left: 66px;
 }

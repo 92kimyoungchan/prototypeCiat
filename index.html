@@ -432,11 +432,14 @@
 					<input type="radio" name="healthy" value="" id="sort-low"><label for="sort-low">테스트</label>
 				</span>
 
-				<span class="dropdown-el">
-					<input type="radio" name="gender" value="" checked="" id="sort-gender"><label for="sort-gender">성별</label>
-					<input type="radio" name="gender" value="" id="sort-male"><label for="sort-male">남성</label>
-					<input type="radio" name="gender" value="" id="sort-female"><label for="sort-female">여성</label>
-				</span>
+				<div class="selectContainer big">
+					<select class="js-example-basic-single" id="" name="">
+						<option value="" selected>성별</option>
+						<option value="" >남성</option>
+						<option value="" >여성</option>
+					</select>
+
+				</div>
 
 				<span class="dropdown-el">
 					<input type="radio" name="target" value="" checked="" id="sort-target"><label for="sort-target">대상자</label>
@@ -629,6 +632,7 @@
 </footer>
 
 	<script src="js/vendor/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 	<script src="js/vendor/swiper.min.js"></script>
 	<script src="js/vendor/TweenMax.min.js"></script>
 	<script src="js/mainVisualCarocel.js"></script>
