@@ -1,47 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>뉴올</title>
 	<link rel="stylesheet" href="../css/all.min.css">
 	<link rel="stylesheet" href="../css/style.css">
-	<style>
-  .tab-nav {
-  	margin: 0;
-  	padding: 0;
-  	}
-  .tab-link {
-  		margin-right: 5px;
-  		padding: 10px 20px;
-  		color: #fff;
-  		display: inline-block;
-  		background-color: #b3b3b3;
-  		}
+	<link rel="stylesheet" href="../css/introduction.css">
 
-  		.tab-link:last-child {
-  			margin-right: 0;
-  			}
-
-  		.tab-link:hover {
-  			color: #6d6d6d;
-  			}
-
-  		.tab-link.is-active {
-  			color: #dc446e;
-  			background-color: #e7e7e7;
-  			}
-
-  /* Tab Content */
-  .tab-content {
-  	display: none;
-  	background-color: #e7e7e7;
-  	}
-
-  	.tab-content.is-active {
-  		display: block;
-  		padding: 20px;
-  		}
-  </style>
 </head>
 <body>
 	<header>
@@ -197,22 +161,15 @@
 			<div class="subP-clinical-title">
 				<div class="subPage b-bottom" style="margin-bottom: 0 !important; border-bottom: none;">
 					<h2>임상시험 제대로 알기</h2>
-					<!-- <div class="academy-mobile-header">
-						<p>allct에 회원가입을 하시면 모집공고 및 임상시험에 대한 다양한 자료들을 열람하실 수 있습니다.</p>
-					</div> -->
-					<div class="small_navigation">
-						<a href=""><i class="fas fa-home"></i>홈</a><span>><a href="/info/infoClinicalInfo">임상시험이란?</a></span>
-					</div>
+
 				</div>
 			</div>
 				<div id="tabs" class="tab-contents no-js">
-
 					<div class="tab-nav">
 						<a href="#" class="tab-link is-active">1</a>
 						<a href="#" class="tab-link">2</a>
 						<a href="#" class="tab-link">3</a>
 					</div>
-
 					<!-- Tab panels -->
 					<div class="tab-content is-active card">
 						<div class="clinical_info_content_box">
@@ -221,7 +178,7 @@
 									<h2>임상시험의 정의</h2>
 									<div class="clinical_imgText">
 										<div class="clinical_imgBox">
-											<img src="/resources/images/clinical_info02.png" alt="임상시험의 정의 메인 이미지">
+											<img src="../images/introduction/clinical_info02.png" alt="임상시험의 정의 메인 이미지">
 										</div>
 										<div class="clinical_text">
 											<p>임상시험(Clinical Trial/Study)이라 함은, <br> 임상시험용의약품의 안전성과 유효성을 증명할
@@ -231,10 +188,8 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="info_border">
 								</div>
-
 								<div class="info_textBox">
 									<h2 class="info_kinds_h2">임상시험의 종류</h2>
 									<p class="info_text kinds">임상시험의 종류에는 임상시험 목적에 따른 분류로 임상 약리시험,
@@ -242,13 +197,10 @@
 										임상시험 실시 시기에 따른 분류로 제1상 임상시험, 제2상 임상시험,
 										제3상 임상시험, 제4상 임상시험이 있습니다.</p>
 								</div>
-
 								<hr class="info_hr_border2">
-
 								<div class="clinical_info_title">
 									<h2>임상시험 목적에 따른 분류</h2>
 								</div>
-
 								<table class="clinical_info_table" summary="임상시험 목적에 따른 분류">
 									<caption>임상시험 목적에 따른 분류</caption>
 									<thead></thead>
@@ -385,7 +337,7 @@
 								<div class="info_step_content">
 									<h2>임상시험 단계별 목적</h2>
 									<div class="info_step_imgBox">
-										<img class="info_step_img" src="/resources/images/info_step.png" alt="임상시험 단계별 목적" />
+										<img class="info_step_img" src="../images/introduction/info_step.png" alt="임상시험 단계별 목적" />
 									</div>
 								</div>
 								<p class="sourceId">출처 : <a href="http://www.mfds.go.kr" target="_blank">식품의약품안전처</a>,<a href="http://drug.mfds.go.kr" target="_blank">온라인의약도서관</a></p>
@@ -401,7 +353,7 @@
 								<h2>생물학적동등성시험(생동성시험)의 정의</h2>
 								<div class="clinical_imgText">
 									<div class="clinical_imgBox">
-										<img src="/resources/images/clinical_info03.png" alt="생동성시험의 정의 메인 이미지">
+										<img src="../images/introduction/clinical_info03.png" alt="생동성시험의 정의 메인 이미지">
 									</div>
 									<div class="clinical_text">
 										<p class="bio_pText">
@@ -1038,6 +990,26 @@
 				'width': '' + navigationWidth + 'px',
 			});
 
+
+			var accordianContent
+				jQuery(".accordianContent").hide();
+		         //content 클래스를 가진 div를 표시/숨김(토글)
+				$(".accordian").on("click",function(e) {
+	                e.preventDefault();
+
+
+	                $('.accordian').removeClass('accordian_rotate');
+
+	                if($(this).next().css("display") == "none"){
+	                   $(this).addClass('accordian_rotate');
+	                }
+
+	                 $(".accordianContent").not($(this).next(".accordianContent").slideToggle(200)).slideUp(200);
+	              $('.accordian').removeClass('accordian_select');
+	              $(this).addClass('accordian_select');
+
+
+	             });
 
 
 		});
