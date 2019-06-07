@@ -9,12 +9,13 @@
 .card-content .context h6 {
   margin: 0;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .card-content .context h6:last-of-type {
   color: #434343;
   letter-spacing: -0.3px;
+  font-weight: 400;
 }
 
 .card-content .context h2 {
