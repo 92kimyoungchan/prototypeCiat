@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/index/owl.carousel.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css" media="none" onload="this.media='all';">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/mainVisualCarocel.css">
 	<link rel="stylesheet" href="css/index/selectBox.css">
@@ -50,23 +50,22 @@
 					<nav>
 						<ul class="navigation">
 						<div class="bannerBox mot2">
-									<ul class="theory navigation-switch">
-										<li class="root">
-											<a class="rootA" href="">ciat소개</a>
-										</li>
-
-										<li class="root">
-											<a class="rootA" href="">모집공고</a>
-										</li>
-										<li class="root">
-											<a class="rootA" href="">전문정보</a>
-										</li>
-										<li class="root">
-											<a class="rootA" href="">알림정보</a>
-										</li>
-									</ul>
-									</div>
-								</div>
+							<ul class="theory navigation-switch">
+								<li class="root">
+									<a class="rootA" href="">ciat소개</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">모집공고</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">전문정보</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">알림정보</a>
+								</li>
+							</ul>
+							</div>
+						</div>
 					</ul>
 					</nav>
 					<div class="uber">
@@ -139,6 +138,38 @@
 	<div id="main">
 <!--mainVisual carocel -->
 <section id="mainVisual">
+	<div class="mini-navBtn-box">
+		<div class="mini-navBtn-wrap">
+			<div class="mini-navBtn-img">
+				<div class="imgWrap">
+					<img src="images/main/miniNavBtn1.png" alt="생동성알바신청 로고" />
+				</div>
+			</div>
+			<div class="mini-navBtn-text">
+				<p>생동성알바신청</p>
+			</div>
+		</div>
+		<div class="mini-navBtn-wrap">
+			<div class="mini-navBtn-img">
+				<div class="imgWrap">
+					<img src="images/main/miniNavBtn2.png" alt="카톡상담 로고" />
+				</div>
+			</div>
+			<div class="mini-navBtn-text">
+				<p>카톡상담</p>
+			</div>
+		</div>
+		<div class="mini-navBtn-wrap">
+			<div class="mini-navBtn-img">
+				<div class="imgWrap">
+					<img src="images/main/miniNavBtn3.png" alt="전화안내 로고" />
+				</div>
+			</div>
+			<div class="mini-navBtn-text">
+				<p>전화안내</p>
+			</div>
+		</div>
+	</div>
 		<ul class="visual_wrap">
 			<li style="background-image: url('images/main/mainCarocel1.png'); display: block; opacity: 1;">
 					<div class="visual_txt">
@@ -608,6 +639,7 @@
 	<script src="js/header.js"></script>
 	<script src="js/vendor/owl.carousel.min.js"></script>
 	<script src="js/owl2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			// 우버버튼 클릭시 (1).DropMenu 작동금지, (2).우버메뉴 토글(보이기,감추기)
@@ -624,13 +656,16 @@
 			// 	'width': '' + navigationWidth + 'px',
 			// });
 
+
+
 			// swiper js 설정하기
 			var swiper = new Swiper('.swiper-container', {
 				slidesPerView: 3,
 				spaceBetween: 30,
+				mousewheel: true,
+				draggable: true,
 				scrollbar: {
-					el: '.swiper-scrollbar',
-					draggable: true,
+					el: '.swiper-scrollbar'
 				},
 			});
 

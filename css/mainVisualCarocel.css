@@ -155,7 +155,7 @@
 #mainVisual #indiBtn button {
     width: 10px;
     height: 10px;
-    background-color: #A4A4A4;
+    background-color: #ffffff;
     text-indent: -9999px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -168,7 +168,7 @@
 
 #mainVisual #indiBtn button.active {
     width: 45px;
-    background-color: #fff;
+    background-color: #4985ed;
 }
 
 /* common */
@@ -223,4 +223,54 @@ button, input {
 }
 button, input, optgroup, select, textarea {
     margin: 0;
+}
+
+/* MINI_NAVIBTN CSS */
+.mini-navBtn-box {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    top: calc(50% - 150px);
+    background: #17305D;
+    box-shadow: 0px 1px 5px 0px rgb(68, 62, 62);
+}
+
+.mini-navBtn-box .mini-navBtn-wrap {
+    border-bottom: 1px solid #4d5667;
+    padding: 8px 8px;
+    text-align: center;
+    display: table;
+    /* height: 100%; */
+    /* min-height: 80px; */
+    height: 100px;
+    width: 100%;
+    cursor: pointer;
+  }
+.mini-navBtn-box .mini-navBtn-wrap:last-child {
+    border-bottom: none;
+}
+
+.mini-navBtn-box .mini-navBtn-wrap .mini-navBtn-text p {
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'NanumSquare';
+}
+.mini-navBtn-box .mini-navBtn-wrap .mini-navBtn-img {
+  overflow: auto;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.mini-navBtn-text {
+    /* float: left; */
+    display: table-footer-group;
+    /* margin-bottom: 40px; */
+}
+.mini-navBtn-box .mini-navBtn-wrap .mini-navBtn-img .imgWrap {
+    /* margin-top: 5px; */
+    padding-top: 5px;
 }

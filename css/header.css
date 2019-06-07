@@ -244,6 +244,7 @@ nav ul.theory {
   width: 100%;
   float: left;
   padding: 5px 100px;
+  padding-top: 6px;
 	/* font-family: 'Noto Sans KR', sans-serif; */
 	/* font-family: "Malgun Gothic", "ë§‘ì€ ê³ ë”•", ë‹ì›€, Dotum, êµ´ë¦¼, Gulim, mal; */
 
@@ -351,6 +352,9 @@ ul.uberMenu li.uberColumn ul > li {
 
 /* color: #1E243F; */
 
+body > header > div.headerWrap > div.navigationStatus > div > ul > li:nth-child(1) > a {
+    color: #4985ED;
+}
 
 text-align: center;
 }

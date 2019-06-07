@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>뉴올</title>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/index/footer.css">
+  <link rel="stylesheet" href="../css/board.css">
+
+</head>
+
+<body>
+  <header>
+		<div class="headerWrap">
+			<!-- 로그인 , 회원가입 등 네비게이션 최상단 메뉴 -->
+			<div class="navigationStatus">
+				<div class="container">
+					<ul class="navigationStatus-wrap">
+						<li>
+							<a href="">로그인</a>
+						</li>
+						<li>
+							<a href="">회원가입</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="navigationContent mot2">
+				<div class="navigationContent-wrap">
+								<span class="liUnder mot2"></span>
+				<div class="container">
+				<div class="navigationWrap">
+					<div class="logo">
+						<div class="imgWrap">
+							<img src="../images/logo.png" />
+						</div>
+					</div>
+
+						<!-- 네비게이션 메뉴 -->
+					<nav>
+						<ul class="navigation">
+						<div class="bannerBox mot2">
+							<ul class="theory navigation-switch">
+								<li class="root">
+									<a class="rootA" href="">ciat소개</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">모집공고</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">전문정보</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">알림정보</a>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</ul>
+					</nav>
+					<div class="uber">
+						<div class="uberButton">
+							<a><i class="fal fa-bars"></i></a>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="headerDoor navigation-switch">
+						<div class="container">
+							<div class="uberSection">
+											<ul class="uberMenu">
+												<li class="uberColumn">
+													<ul>
+														<!--베스티안치과-->
+														<li><a href="http://www.yangak.com/new/intro/index.php">베스티안 치과 소개</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index1.php">대표원장 인사말</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index2.php">의료진 소개</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index3.php">진료안내</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index4.php">오시는 길</a></li>
+
+													</ul>
+												</li>
+												<li class="uberColumn">
+													<ul>
+														<!--프로그램안내-->
+														<li><a href="http://www.yangak.com/new/implant01/index1.php">보험 임플란트</a></li>
+														<li><a href="http://www.yangak.com/new/implant01/index2.php">당뇨 임플란트</a></li>
+														<li><a href="http://www.yangak.com/new/implant01/index3.php">무치약 임플란트</a></li>
+
+
+													</ul>
+												</li>
+												<li class="uberColumn">
+													<ul>
+														<!--양악수술 -->
+															<li><a href="http://www.yangak.com/new/yangak/index.php">베스티안 양악수술</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index1.php">BOS SYSTEM</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index2.php">베스티안 선수술</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index3.php">BOS V라인수술</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index4.php">증상별 클리닉</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index10.php">자가수혈 시스템</a></li>
+													</ul>
+												</li>
+												<li class="uberColumn">
+													<ul>
+														<!-- <li>안면윤곽-->
+															<li><a href="http://www.yangak.com/new/v_clinic/index.php">베스티안 안면윤곽</a></li>
+															<li><a href="http://www.yangak.com/new/v_clinic/index1.php">증상별 클리닉</a></li>
+															<li><a href="http://www.yangak.com/new/v_clinic/index6.php">자가수혈 시스템</a></li>
+													</ul>
+												</li>
+											</ul>
+								</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="header-padding">
+
+			</div>
+
+			</div>
+		</div>
+	</header>
+  <div id="main">
+    <div class="container">
+      <div class="subP dy-box">
+					<div class="subPage">
+						<h2 class="b-bottom">국내 법령∙가이드라인</h2>
+
+					<div class="board-select">
+            <div class="warningWrapper">
+										<h2>문의 및 상담 안내</h2>
+										<p>문의 및 상담글에 대한 관리자의 답변은 마이페이지의 '나의 문의 및 상담 내용'에서 편리하게 확인하실 수 있습니다.</p>
+										<c:choose>
+											<c:when test="${member.member_id != null}">
+												<div class="attachmentGrid">
+													<div class="buttonDiv cle">
+							                           <button class="cle" type="button" onclick="location.href='/member/myQna'">바로가기</button>
+							                        </div>
+						                        </div>
+											</c:when>
+										</c:choose>
+									</div>
+
+                  <div class="recruit-box">
+        										<div class="recruit-header">
+        											<form action="/info/infoQnaCreate">
+        												<c:if
+        													test="${sessionScope.member.member_id !='' || sessionScope.member.member_id !=null }">
+        													<button type="submit">글쓰기</button>
+        												</c:if>
+
+        												<input type="hidden" name="pageNum">
+        											</form>
+
+        											<div class="select-group">
+        												<form id="selectForm" action="/info/infoQna"
+        													style="display: inline;">
+        													<select id="select" title="페이지에 나타낼 개수 ">
+        														<option value="15">15개씩</option>
+        														<option value="30">30개씩</option>
+        														<option value="45">45개씩</option>
+        														<option value="60">60개씩</option>
+        														<option value="75">75개씩</option>
+        													</select> <input type="hidden" name="pageSize" value="10"
+        														class="numOfRows"> <input type="hidden"
+        														name="searchWord" value="${searchWord}">
+        												</form>
+
+        												<form action="/info/infoQna" style="display: inline;">
+        													<div class="input-search-box">
+        														<div class="input-search">
+        															<input type="text" name="searchWord"
+        																value="${searchWord}" title="문의 및 상담 리스트 제목으로 검색하기"
+        																placeholder="제목입력">
+        														</div>
+        														<button type="submit" value="" class="search-icon">
+        															<i class="fas fa-search"></i>
+        														</button>
+        													</div>
+        													<input type="hidden" name="numOfRows" value="10"
+        														class="numOfRows">
+        													<c:if
+        														test="${member.member_id != null || member.member_id != ''}">
+        														<input type="hidden" name="admin" value="A">
+        														<input type="hidden" name="member_id"
+        															value="${member.member_id}">
+        													</c:if>
+        												</form>
+        											</div>
+        										</div>
+        									</div>
+                          <div class="board_news dy-box">
+           						<table class="table table-admin" summary="문의 및 상담 리스트">
+           							<caption>문의및 상담 리스트</caption>
+           							<thead>
+           								<tr class="table-header news-dy-header">
+           									<th class="news-mobile-header">번호</th>
+           									<th>번호</th>
+           									<th>제목</th>
+           									<th>작성자</th>
+           									<th>첨부파일</th>
+           									<th>날짜</th>
+           								</tr>
+           							</thead>
+           							<c:choose>
+           								<c:when test="${empty AllCT_boardDtoList}">
+           									<tbody>
+           										<tr class="board-resultZero-tr">
+           											<td colspan="5"><span>조회된 검색 결과가 없습니다.</span></td>
+           										</tr>
+           									</tbody>
+           								</c:when>
+           								<c:otherwise>
+           									<tbody>
+           										<c:forEach items="${AllCT_boardDtoList}" varStatus="index"
+           											var="pub">
+           											<tr>
+           												<td>${count-(((paging.currentPage-1)*paging.pageSize)+index.index)}</td>
+           												<td class="info-title"><span> <a
+           														class="detailLink" title="${pub.title2}"
+           														<c:if test="${sessionScope.member.member_type == 'A' ||sessionScope.member.member_id ==pub.member_id  || pub.board_secret =='N'}">
+           										href ="${pub.board_id}"
+           								 </c:if>>
+
+           															<c:if test="${pub.board_secret =='Y'}">
+
+           																<c:if
+           																	test="${member.member_id == pub.member_id || member.member_type =='A' }">
+           												${pub.title2}<i class="fas fa-lock qna-lock"></i>
+           																</c:if>
+
+           																<c:if
+           																	test="${member.member_id != pub.member_id && member.member_type !='A' }">
+           												비밀글입니다<i class="fas fa-lock qna-lock"></i>
+           																</c:if>
+
+           															</c:if> <c:if test="${pub.board_secret =='N'}">
+           										${pub.title2}
+           										</c:if>
+           													</a>
+           												</span></td>
+           												<td><c:if test="${pub.board_secret =='Y'}">
+           														<c:if
+           															test="${member.member_id == pub.member_id || member.member_type =='A' }">
+           												${pub.member_name}
+           												</c:if>
+           														<c:if
+           															test="${member.member_id != pub.member_id && member.member_type !='A' }">
+           												비공개
+           												</c:if>
+           													</c:if> <c:if test="${pub.board_secret =='N'}">
+           										${pub.member_name}
+           										</c:if></td>
+           												<td><c:if test="${pub.attach_count != 0}">
+           														<i class="fas fa-file-archive"></i>
+           													</c:if></td>
+           												<td>${pub.board_date}</td>
+           											</tr>
+           										</c:forEach>
+           									</tbody>
+           								</c:otherwise>
+           							</c:choose>
+
+           							<tfoot />
+           						</table>
+           						<form action="/info/infoQnaCreate">
+           							<c:if test="${sessionScope.member != null}">
+           								<button type="submit" class="mobileBtn">글쓰기</button>
+           							</c:if>
+           						</form>
+
+           						<c:if test='${searchWord != ""  && empty AllCT_boardDtoList}'>
+           							<div class="center-btn-box">
+           								<button
+           									onClick="location.href='/info/infoQna?pageSize=${paging.pageSize}'"
+           									style="cursor: pointer;">목록으로</button>
+           							</div>
+           						</c:if>
+           					</div>
+
+
+
+
+
+
+
+
+
+                    <c:if test='${paging.currentPage != 0}'>
+        						<div class="academy-paging">
+        							<ul id="pagination" class="pagination-sm pagination">
+        								<c:if test='${paging.previous != ""}'>
+        									<li class="page-item prev"><a class="page-link"
+        										href="${paging.previous}">이전</a></li>
+        								</c:if>
+        								<c:forEach begin="${paging.startPage}" end="${paging.endPage}"
+        									var="i">
+        									<li
+        										<c:if test="${paging.currentPage == i}">class ="page-item active"</c:if>>
+        										<a class="page-link" href="${i}">${i}</a>
+        									</li>
+        								</c:forEach>
+        								<c:if test='${paging.nextPage != ""}'>
+        									<li class="page-item next"><a class="page-link"
+        										href="${paging.nextPage}">다음</a></li>
+        								</c:if>
+        							</ul>
+        						</div>
+        					</c:if>
+
+                  <!--페이지 네이션 전용 form -->
+              			<form id='f1' action="" method="get">
+              				<input type='hidden' name='pageNum' value="${paging.pageNum}">
+              				<input type='hidden' name='numOfRows'
+              					value="${openApiExUtill.numOfRows}"> <input type='hidden'
+              					name='searchWord' value="${searchWord}"> <input
+              					type='hidden' name='pageSize' value="${paging.pageSize}">
+              			</form>
+
+				</div>
+      </div>
+  </div>
+  	</div>
+    <footer>
+      	<div class="footer-wrap">
+      		<div class="imgWrap">
+      			<img src="../images/main/footer-logo.png" alt="CIAT 로고" />
+      		</div>
+
+      		<div class="footer-content">
+      			<div class="footer-header">
+      				<p>
+      					개인정보 취급방침 | 이용약관
+      				</p>
+      			</div>
+      			<div class="footer-body">
+      				<p>
+      					(주) Fineinsight
+      				</p>
+      				<p>
+      					04798 서울시 성동구 성수이로 22길 37 성수동 아크밸리 401, 402 (서울산업진흥원 성수 IT 종합센터)
+      				</p>
+
+      				<p>
+      					대표자: 신현경 | 사업자등록번호: 211-88-93785
+      				</p>
+      			</div>
+
+      			<div class="footer-bottom">
+      				<p>
+      					Copyright &copy; Fineinsight all rights reserved
+      				</p>
+      			</div>
+      		</div>
+      	</div>
+
+
+      </footer>
+
+  <script src="../js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="../js/vendor/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/vendor/select.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+
+			$('#sideContent').find('.is-checked').removeClass('is-checked');
+			$('#sideContent>.contentElement:eq(1)').addClass('is-checked');
+			$('.sub-banner').css({
+				background : "url(../resources/images/info02.png) no-repeat"
+			});
+		});
+
+		$(function() {
+
+			var formObj = $("#f1");
+
+			//페이지 이동
+			$("#pagination .page-link").click(function(e) {
+
+				e.preventDefault();
+
+				formObj.find('[name="pageNum"]').val($(this).attr('href'));
+
+				formObj.attr("action", '/info/infoQna');
+
+				formObj.submit();
+
+			});
+
+			// detail 페이지로 가기
+			$(".detailLink")
+					.click(
+							function(e) {
+
+								e.preventDefault();
+
+								var board_id = $(this).attr("href");
+
+								if (board_id > 0) {
+
+									formObj.attr("action",
+											'/info/infoQnaContent');
+
+									formObj
+											.append("<input type='hidden' name='board_id' value='" + board_id +"'>");
+
+									formObj.submit();
+								}
+
+							});
+
+			var numberOfRows = "<c:out value='${paging.pageSize}'/>";
+
+			$(".numOfRows").each(function() {
+				$(this).val(numberOfRows)
+			})
+
+			if (numberOfRows == "" || numberOfRows == 0) {
+				$(".select-styled").text("15 개씩")
+			} else {
+				$(".select-styled").text(numberOfRows + " 개씩")
+			}
+
+			//select 변경시 발생하는 submit function
+
+			$(".select-options li").on("click", function() {
+				var numOfRows = $(this).attr("rel");
+
+				$(".numOfRows").val(numOfRows);
+
+				$('#selectForm').submit();
+
+			})
+		})
+  </script>
+
+</body>
+
+</html>
