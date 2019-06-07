@@ -183,6 +183,18 @@ input {
   margin-right: auto;
 }
 
+#main {
+  padding-top:55px;
+}
+
+div.subP-clinical-title {
+  margin-bottom:70px;
+}
+
+form {
+  margin:0;
+}
+
 /*헤더css */
 header {}
 
