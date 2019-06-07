@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .partnerCompany {
-  margin: 40px 0 120px;
+  margin: 40px 0;
   padding: 20px 0;
   background: #fff;
 }
@@ -12,7 +12,7 @@
 }
 
 .owlc2 {
-  width: 67%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -22,10 +22,26 @@
 
 .owl-nav {
   position: absolute;
-  top: calc(50% - 15.2px);
+  top: calc(50% - 35px);
   color: white;
   width: calc(100% + 15%);
   left: -7.5%;
   z-index: 0;
   display: block !important;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  background: #ddd;
+}
+
+.owlc2 button {
+  position: absolute;
+}
+
+.owlc2 button.owl-prev {
+  left: 20px;
+}
+
+.owlc2 button.owl-next {
+  right: 20px;
 }
