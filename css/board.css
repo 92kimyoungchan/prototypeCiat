@@ -13,11 +13,10 @@
 }
 
 .subPage h2 {
-  float: left;
     font-size: 27px;
     padding-bottom: 10px;
     color: #3caa69;
-    margin-bottom: 4px;
+    margin-bottom: 30px;
     letter-spacing: 0.41px;
     font-weight:bold;
 }
@@ -48,6 +47,7 @@ cursor:pointer;
 }
 
 .recruit-box .select-group {
+  display:flex;
   float:right;
 }
 

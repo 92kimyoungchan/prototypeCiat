@@ -1,6 +1,21 @@
 @charset "UTF-8";
 
 
+.subPage h2 {
+font-size: 27px;
+padding-bottom: 10px;
+color: #3caa69;
+font-weight:bold;
+letter-spacing:0.41px;
+}
+
+
+	.b-bottom {
+	  border-bottom: 1.4px solid #95989a;
+	    margin-bottom: 20px;
+
+}
+
 div.accordian {
 	border-bottom:1px solid #ddd;
 	padding:12px 3px;
