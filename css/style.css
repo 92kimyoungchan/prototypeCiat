@@ -75,6 +75,7 @@
     url('../fonts/NotoSansCJKKr-Black?#iefix') format('embedded-opentype');
 }
 
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 .font-normal{
   font-weight: normal;
@@ -186,12 +187,13 @@ input {
 /*헤더css */
 header {}
 
-header .headerWrap {
-  box-shadow: 0px 2px 2.5px 1px rgba(183, 183, 183, 0.3);
-}
+  header .headerWrap {
+      position: absolute;
+      width: 100%;
+  }
 
 .headerWrap .navigationStatus {
-  box-shadow: 0px 2px 2.5px 1px rgba(183, 183, 183, 0.3);
+
 }
 
 .navigationStatus ul {
@@ -226,22 +228,23 @@ header .headerWrap {
 }
 
 .headerWrap .navigationWrap {
-  display: flex;
-  height: 75px;
+  height: 84px;
+  float: left;
+  width: calc(100% - 84px);
 }
 
 .navigationWrap .logo {
-  flex-grow: 0;
   padding: 12px 0;
+  float: left;
 }
 
-.navigationWrap .logo .imgWrap {}
+.navigationWrap .logo .imgWrap { width: 120px;}
 
-.headerWrap .navigationWrap ul.navigation {
+/* .headerWrap .navigationWrap ul.navigation {
   flex-grow: 1;
   margin: 0 145px;
   display: flex;
-}
+} */
 
 ul.navigation li.navigationColumn {
   width: calc(100% /4);
@@ -267,39 +270,47 @@ ul.navigation li ul.dropMenu li a {
 }
 
 ul.navigation li.active a {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #4985ED;
 }
 
 ul.navigation li.active a.active {
-  color: 1px solid blue;
+  color: 1px solid #4985ED;
 }
 
 ul.navigation:not(.prohibition) li:hover ul.dropMenu {
   display: block;
   position: absolute;
   width: 100%;
-  border-top: 5px solid blue;
+  border-top: 5px solid #4985ED;
   transition:all 0.2s ease-out;
   background: white;
   z-index: 98;
 }
 
 .headerWrap div.uber {
-  flex-grow: 0;
-  width: 75px;
-  background: blue;
+  width: 84px;
+  height: 84px;
+  background-color:#EDB649;
+  float: right;
+  position: relative;
 }
 
 div.uber .uberButton {
-  background: blue;
+  background:#EDB649;
   padding: 22.5px;
 }
 
-div.uber .uberButton a {}
+div.uber .uberButton a {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    left: calc(50% - 14.875px);
+    top: calc(50% - 17px);
+}
 
 div.uber .uberButton a i {
   color: white;
-  font-size: 29px;
+  font-size: 34px;
 }
 
 div.uber.active .uberButton {
@@ -367,6 +378,10 @@ overflow:unset;
   margin:0 !important;
 }
 
+.rollingBanner .swiper-scrollbar-drag {
+    background: #4984ED;
+}
+
 .rollingBanner .swiper-container .swiper-wrapper {
 
 min-height: 325px;
@@ -376,18 +391,21 @@ min-height: 325px;
 }
 .rollingBanner .swiper-container .swiper-wrapper .swiper-slide.card {
 cursor:pointer;
-border-top: 3px solid blue;
+border-top: 3px solid #4985ED;
 box-shadow:0px 0px 3px 1.5px rgba(183, 183, 183, 0.3);
 }
 .swiper-slide.card .header {
 }
 .swiper-slide.card .header label {
-    display: inline-block;
-    width: 65px;
-    text-align: center;
-    background: blue;
-    color: white;
-    line-height: 34px;
+  display: inline-block;
+  width: 76px;
+  height: 36px;
+  text-align: center;
+  background: #4985ED;
+  color: white;
+  line-height: 34px;
+  font-size: 20px;
+  font-weight: 350;
 }
 .swiper-slide.card .header span {
 
@@ -398,6 +416,11 @@ padding: 5px 25px 5px 0;
 .swiper-slide.card .header span i {
 
 font-size: 19px;
+color: #C8CBD1;
+}
+.swiper-slide.card .header span i.active {
+
+color: #4985ED;
 }
 .swiper-slide.card.active .header span {
 
@@ -416,12 +439,11 @@ height: 230px;
 }
 
 .swiper-slide.card .context h6 {
-
-margin: 0;
-
-font-size: 14px;
-
-font-weight: 400;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #434343;
 }
 
 .swiper-slide.card .context h6 b {
@@ -436,16 +458,12 @@ padding-right: 12px;
 .swiper-slide.card .context h6 b:before {position: absolute;content: "";width: 2px;height: 18px;top: 2px;background: #808080;right: 5px;border-radius: 25px;}
 
 .swiper-slide.card .context h2 {
-
-font-size: 19px;
-
-letter-spacing: -0.41px;
-
-font-weight: 450;
-
-margin: 10px 0 15px 0;
-
-padding-bottom: 0;
+  font-size: 19px;
+  letter-spacing: -0.4px;
+  font-weight: 450;
+  margin: 10px 0 15px 0;
+  color: #434343;
+  padding-bottom: 0;
 }
 
 .swiper-slide.card .context .inBottom {
@@ -456,10 +474,12 @@ bottom: 25px;
 }
 
 .swiper-slide.card .context .inBottom ul {
-
 margin: 0;
-
 display: flex;
+}
+
+.swiper-slide.card .context .inBottom ul li:nth-child(2n) {
+    background-color: #97B9F5;
 }
 
 .swiper-slide.card .context .inBottom ul li {
@@ -468,7 +488,7 @@ min-width: 67px;
 
 text-align: center;
 
-background: blue;
+background: #4985ED;
 
 color: white;
 
@@ -478,7 +498,7 @@ border-radius: 12.5px;
 
 margin-right: 10px;
 
-font-size: 14px;
+font-size: 15px;
 }
 
 .swiper-slide.card .context .inBottom ul li:last-of-type {
@@ -501,6 +521,6 @@ bottom: 0;
 
 left: 0;
 
-
+background: #DBDBDB;
 }
 /*메인- 롤링배너 ===================================================================*/

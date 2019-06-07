@@ -47,12 +47,28 @@
     line-height: 70px;
 }
 
+#mainVisual .visual_wrap .visual_txt .txt_wrap h3.txt_title {
+    font-weight: 500;
+    font-size: 50px;
+}
+
 #mainVisual .visual_wrap .visual_txt .txt_wrap p {
     font-size: 20px;
     line-height: 30px;
-    padding: 15px 0 0;
+    padding: 25px 0 0;
     color: #fff;
 }
+#mainVisual .visual_wrap .visual_txt .txt_wrap p.txt_sub_title {
+    margin-bottom: 16px;
+    font-size: 30px;
+    text-shadow: 0.1px 0.1px #dedede;
+}
+#mainVisual .visual_wrap .visual_txt .txt_wrap p.txt_text {
+    font-size: 25px;
+    letter-spacing: -1px;
+    padding-top: 65px;
+}
+
 #mainVisual .visual_wrap .visual_txt .txt_wrap h3, #mainVisual .visual_wrap .visual_txt .txt_wrap p, #mainVisual .visual_wrap .visual_txt .txt_wrap a {
     position: relative;
     -webkit-transform: translate(0, 30px);
@@ -86,18 +102,18 @@
 /* mainVisualCarocel button  */
 #mainVisual #navBtn {
     width: 100%;
-    min-width: 1180px;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 36px);
+    left: calc(50% - 645px);
     z-index: 20;
 }
 
 #mainVisual #navBtn button.prev {
-    left: 50px;
+    left: 15px;
 }
 
 #mainVisual #navBtn button.next {
-    right: 50px;
+    right: 15px;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -128,7 +144,7 @@
     width: 100%;
     position: absolute;
     z-index: 20;
-    bottom: 40px;
+    bottom: 80px;
     text-align: center;
 }
 #mainVisual #indiBtn li {
@@ -139,7 +155,7 @@
 #mainVisual #indiBtn button {
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #A4A4A4;
     text-indent: -9999px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -152,7 +168,7 @@
 
 #mainVisual #indiBtn button.active {
     width: 45px;
-    background-color: #1428a0;
+    background-color: #fff;
 }
 
 /* common */
