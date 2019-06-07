@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.footer-wrap {
+  width: 100%;
+  background: #202737;
+  padding: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-wrap .imgWrap {
+  display: inline-block;
+  float: left;
+}
+
+.footer-content {
+  float: left;
+}
