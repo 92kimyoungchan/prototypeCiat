@@ -52,6 +52,15 @@
   padding: 20px 30px;
   border: 1px solid #C2C2C2;
   box-shadow: 0px 0px 3px 1.5px rgba(183, 183, 183, 0.3);
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+}
+
+.card-content:hover {
+  top: -5px;
+  position: relative;
+  background: #eff5ff;
+  cursor: pointer;
 }
 
 .card-content.blue {
