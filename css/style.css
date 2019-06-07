@@ -213,18 +213,17 @@ header {}
 }
 
 .navigationStatus ul li:nth-of-type(2) a {
-  padding: 0 6.5px 0 9.5px;
+  padding: 0 6.5px 0 12.5px;
 }
 
 .navigationStatus ul li:nth-of-type(2) a:before {
   position: absolute;
   content: "";
-  width: 3px;
-  height: 20px;
-  top: 2px;
-  background: #7EB4d6;
-  left: 0px;
-  border-radius: 25px;
+  width: 1px;
+  height: 15px;
+  top: 6px;
+  background: #434343;
+  left: 3px;
 }
 
 .headerWrap .navigationWrap {
@@ -392,7 +391,7 @@ min-height: 325px;
 .rollingBanner .swiper-container .swiper-wrapper .swiper-slide.card {
 cursor:pointer;
 border-top: 3px solid #4985ED;
-box-shadow:0px 0px 3px 1.5px rgba(183, 183, 183, 0.3);
+box-shadow:-0.5px 0.5px 6px 1.5px rgba(183, 183, 183, 0.3);
 }
 .swiper-slide.card .header {
 }
@@ -411,7 +410,7 @@ box-shadow:0px 0px 3px 1.5px rgba(183, 183, 183, 0.3);
 
 float: right;
 
-padding: 5px 25px 5px 0;
+padding: 10px 19px 5px 0;
 }
 .swiper-slide.card .header span i {
 
@@ -455,7 +454,16 @@ position: relative;
 padding-right: 12px;
 }
 
-.swiper-slide.card .context h6 b:before {position: absolute;content: "";width: 2px;height: 18px;top: 2px;background: #808080;right: 5px;border-radius: 25px;}
+.swiper-slide.card .context h6 b:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 15.3px;
+  top: 4px;
+  background: #808080;
+  right: 5px;
+  border-radius: 25px;
+}
 
 .swiper-slide.card .context h2 {
   font-size: 19px;

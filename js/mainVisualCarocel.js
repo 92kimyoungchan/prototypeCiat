@@ -6,10 +6,21 @@ var winSc;
 var $container = $("#container");
 var $subVisual = $container.find("#subVisual");
 
-$(document).ready(function() {
-	main();
-});
+$(function(){
 
+		var img = new Image();
+
+		img.src = 'images/main/mainCarocel1.png';
+
+		// 'load' event
+		$(img).on('load', function() {
+
+			TweenMax.to($(".visual_wrap"), 0, {opacity:1, display:"block",ease:es_step});
+				 	main();
+		});
+
+
+})
 function main() {
   //mainVisual
   var $mainVisual = $("#mainVisual");
