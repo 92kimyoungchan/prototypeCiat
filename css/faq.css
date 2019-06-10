@@ -4,7 +4,7 @@
 .subPage h2 {
 font-size: 27px;
 padding-bottom: 10px;
-color: #3caa69;
+color: #4985ed;
 font-weight:bold;
 letter-spacing:0.41px;
 }
@@ -73,7 +73,7 @@ div.accordianContent .answer {
 	float:left;
 	font-size:18px;
 	font-weight:bold;
-	color:#3caa69;
+	color:#4985ed;
 	margin:17px 0 0 12px;
 }
 
@@ -93,7 +93,7 @@ div.accordianContent .answerContent p {
 }
 
 div.accordianContent .answerContent a {
-	color:#3caa69;
+	color:#4985ed;
 }
 
 div.accordianContent .answerContent br {
@@ -111,11 +111,17 @@ div.accordian_rotate i{
 
 
 div.accordian_select {
-	background: #3caa69;
+	background: #4985ed;
     color: #ffffff;
     cursor:pointer;
 }
 
 div.accordian.accordian_select > p{
 	  color: #ffffff;
+}
+
+@media screen and (max-width:480px) {
+	div.accordian .questionContent {
+		white-space: pre-line;
 	}
+}

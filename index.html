@@ -685,7 +685,7 @@
 </footer>
 
 	<script src="js/vendor/jquery-3.4.1.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 	<script src="js/vendor/swiper.min.js"></script>
 	<script src="js/vendor/TweenMax.min.js"></script>
@@ -697,6 +697,25 @@
 	<script src="js/mainVisualCarocel.js"></script>
 	<script type="text/javascript">
 		$(function() {
+
+			$(".mySelect").select2({
+        minimumResultsForSearch: -1
+      });
+
+			// 우버버튼 클릭시 (1).DropMenu 작동금지, (2).우버메뉴 토글(보이기,감추기)
+			// $('.uberButton').on('click', function() {
+			// 	$(this).parents('.uber').prev().toggleClass('prohibition');
+			// 	$(this).parent().toggleClass('active');
+			// });
+
+			// 우버메뉴 위치시키기
+			// var navigationWidth = $('ul.navigation').width();
+			// var navigationBeginPoint = $('ul.navigation').offset().left;
+			// $('ul.uberMenu').css({
+			// 	'margin': '0 ' + navigationBeginPoint + 'px',
+			// 	'width': '' + navigationWidth + 'px',
+			// });
+      
 
 			// swiper js 설정하기
 			var swiper = new Swiper('.swiper-container', {
