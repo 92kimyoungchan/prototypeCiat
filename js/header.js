@@ -1,12 +1,16 @@
 	$(document).ready(function() {
 
 				$('.mobilemenu').on('click', function(e) {
+
+
 					/* 기본동작 중지코드 ex) A태그 */
 					e.preventDefault();
 					/*  show - hide 반복 */
-					if($(this).hasClass("active")){
+					if(!$(this).hasClass("active")){
+
 							showMbileMenu();
 					}else{
+
 							fadeMobileMenu();
 					}
 				});
@@ -65,7 +69,10 @@
 
     });
 
+
 	});
+
+
 
 	function showMbileMenu(){
 		var menuBig = $('.menuMobile');

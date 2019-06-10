@@ -750,6 +750,7 @@ nav {
     right: -110%;
     transition: 0.5s;
 		height: 100%;
+		overflow-y: auto;
 }
 .min991 {
     BACKGROUND: #ffffff;
