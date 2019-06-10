@@ -12,16 +12,16 @@ $(document).ready(function() {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
         nav: true
       },
       481: {
         items: 2,
-        nav: false
+        nav: true
       },
       768: {
         items: 3,
-        nav: false
+        nav: true
       },
       992: {
         items: 5,
