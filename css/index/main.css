@@ -9,7 +9,9 @@
 .card-content .context h6 {
   margin: 0;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
+  position: relative;
+  padding-right: 12px;
 }
 
 .card-content .context h6:last-of-type {
@@ -20,7 +22,7 @@
 
 .card-content .context h2 {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 10px 0 15px 0;
   padding-bottom: 0;
   color: #434343;
@@ -39,7 +41,6 @@
 }
 
 .card-section {
-  width: 1290px;
   margin: 0 auto;
   padding: 30px 0;
 }
@@ -131,4 +132,160 @@ span.arrow:after {
   top: 19px;
   position: absolute;
   left: -8px;
+}
+
+
+@media only screen and (max-width: 1079px) {
+
+  .card-content:nth-of-type(3n){
+      margin-right: 10px;
+  }
+  .card-content:nth-of-type(2n){
+      margin-right: 0px;
+  }
+  .card-content {
+      width: calc( ( 100% / 2 ) - 5px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-content .context h2 {
+      font-size: 20px;
+    }
+}
+
+
+/* 하단 overlay   */
+.image-textWrap2 {
+    position: relative;
+    width: 100%;
+}
+
+.image-textWrap2 .textWrap {
+  position: absolute;
+  top: 0;
+  text-align: left;
+  width: 1290px;
+  left: calc(50% - 645px);
+}
+
+.image-textWrap2 .textWrap .mainText>p {
+    font-size: 32px;
+    line-height: 64px;
+}
+
+.image-textWrap2 .textWrap .mainText>.imgWrap {
+    margin-top: 50px;
+}
+
+.textWrap {}
+
+.image-textWrap2 .textWrap .mainText {
+    margin-top: 60px;
+}
+
+.image-textWrap2 .textWrap .mainText>p .blue {
+    color: #4984ec;
+    font-size: 38px;
+}
+
+.image-textWrap2 .textWrap .mainText>button {
+    position: relative;
+    float: left;
+    width: 150px;
+    background-color: #4985ED;
+}
+
+.image-textWrap2 .textWrap .mainText>.btnWrap {
+  float: left;
+  width: 240px;
+  background-color: #4985ED;
+  border-radius: 40px;
+  padding: 10px 35px;
+  position: relative;
+  margin-top: 50px;
+  box-shadow: 0px 1px 4px 0px #596c98;
+}
+
+.image-textWrap2 .textWrap .mainText>.btnWrap button {
+    position: relative;
+}
+
+.image-textWrap2 .textWrap .mainText>.btnWrap button::after{
+  content: '';
+  height: 1.5px;
+  width: 25px;
+  display: block;
+  background: #fff;
+  top: 21px;
+  position: absolute;
+  right: -35px;
+}
+
+.image-textWrap2 .textWrap .mainText>.btnWrap button::before{
+  content: '';
+  height: 13px;
+  width: 10px;
+  display: block;
+  border: 1.5px solid #fff;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  transform: rotate(-55deg);
+  position: absolute;
+  top: 15px;
+  right: -32px;
+
+}
+
+.image-textWrap2 .textWrap .mainText>.btnWrap button span {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+
+}
+
+
+.image-textWrap2 .textWrap .mainText>.btnWrap button span.logo-font {
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1310px) {
+  .image-textWrap2 .textWrap {
+      position: absolute;
+      top: 0;
+      text-align: center;
+      width: 100%;
+      left: 0;
+
+  }
+
+  .image-textWrap2 .textWrap .mainText>.btnWrap {
+    margin: 0 auto;
+    width: 240px;
+    padding: 10px 25px;
+    position: relative;
+    margin-top: 60px;
+    padding-right: 58px;
+    float: none;
+}
+  .image-textWrap2 .textWrap .mainText{
+    width: 100%;
+  }
+  .image-textWrap2 .textWrap{
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+
+  .image-textWrap2 .textWrap .mainText>p {
+      font-size: 26px;
+      line-height: 57px;
+  }
+  .image-textWrap2 .textWrap .mainText>p .blue {
+    color: #4984ec;
+    font-size: 33px;
+  }
 }
