@@ -119,7 +119,7 @@ span.arrow:before {
   transform: rotate(-55deg);
   position: absolute;
   top: 13px;
-  left: 79px;
+  left: 5px;
 }
 
 span.arrow:after {
@@ -130,5 +130,5 @@ span.arrow:after {
   background: #434343;
   top: 19px;
   position: absolute;
-  left: 66px;
+  left: -8px;
 }

@@ -357,7 +357,6 @@ ul.navigation:not(.prohibition) li:hover ul.dropMenu {
 }
 
 div.uber .uberButton {
-  background:#EDB649;
   padding: 22.5px;
 }
 
@@ -374,9 +373,6 @@ div.uber .uberButton a i {
   font-size: 34px;
 }
 
-div.uber.active .uberButton {
-  background: red;
-}
 
 div.uber.active .uberButton a {
   color: white;
@@ -431,7 +427,7 @@ padding-left:15px;
 padding-right:15px;
 transition:all 0.2s ease-out;
 margin:0 auto;
-width:1290px;
+max-width:1290px;
 overflow:unset;
 }
 
@@ -535,6 +531,9 @@ padding-right: 12px;
   margin: 10px 0 15px 0;
   color: #434343;
   padding-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .swiper-slide.card .context .inBottom {
@@ -594,4 +593,63 @@ left: 0;
 
 background: #DBDBDB;
 }
+@media screen and (max-width:1074px) {
+  .swiper-slide.card .context {
+      height: 200px;
+  }
+  .rollingBanner .swiper-container .swiper-wrapper {
+    min-height: 275px;
+  }
+}
 /*메인- 롤링배너 ===================================================================*/
+
+
+
+/* =============================== 임상시험이란 ================================*/
+.image-textWrap {
+    position: relative;
+    width: 100%;
+    background-color: #4985ED;
+}
+
+.image-textWrap {}
+
+.image-textWrap .textWrap {
+    position: absolute;
+    /* left: 50%; */
+    top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.image-textWrap .textWrap .mainText {
+    margin-top: 40px;
+}
+
+.image-textWrap .textWrap .mainText h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.image-textWrap .textWrap .mainText p {
+    font-size: 19px;
+    line-height: 30px;
+    color: #434343;
+}
+
+.image-textWrap .textWrap .subText {
+    margin-top: 20px;
+    /* color: #434343; */
+}
+
+.image-textWrap .textWrap .subText p {
+    color: #434343;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.image-textWrap .textWrap .subText span {
+    text-align: center;
+}

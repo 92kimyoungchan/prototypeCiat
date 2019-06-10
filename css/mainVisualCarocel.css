@@ -12,7 +12,6 @@
 #mainVisual .visual_wrap li {
     width: 100%;
     height: 585px;
-    min-width: 1180px;
     position: absolute;
     top: 0;
     display: none;
@@ -258,6 +257,7 @@ button, input, optgroup, select, textarea {
     font-weight: 400;
     font-family: 'NanumSquare';
 }
+
 .mini-navBtn-box .mini-navBtn-wrap .mini-navBtn-img {
   overflow: auto;
   display: table-cell;
@@ -273,4 +273,91 @@ button, input, optgroup, select, textarea {
 .mini-navBtn-box .mini-navBtn-wrap .mini-navBtn-img .imgWrap {
     /* margin-top: 5px; */
     padding-top: 5px;
+}
+
+@media screen and (max-width:1480px) {
+  #mainVisual #navBtn{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1199px) {
+
+  #mainVisual .visual_wrap .visual_txt .txt_wrap p{
+    padding: 0px;
+  }
+
+  #mainVisual .visual_wrap .visual_txt .txt_wrap p.txt_sub_title {
+      margin-bottom: 16px;
+      font-size: 26px;
+      text-shadow: 0.1px 0.1px #dedede;
+  }
+
+  #mainVisual .visual_wrap .visual_txt .txt_wrap h3.txt_title {
+    font-size: 44px;
+  }
+  #mainVisual .visual_wrap .visual_txt .txt_wrap p.txt_text {
+      font-size: 22px;
+      padding-top: 25px;
+  }
+  #mainVisual {
+      height: 475px;
+  }
+  #mainVisual .visual_wrap li{
+    height: 475px;
+  }
+
+}
+
+@media screen and (max-width:910px) {
+
+  #mainVisual {
+      height: 415px;
+  }
+  #mainVisual .visual_wrap li{
+    height: 415px;
+  }
+
+  #mainVisual .visual_wrap .visual_txt .txt_wrap h3.txt_title{
+    font-size: 31px;
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width:770px) {
+
+  #mainVisual {
+      height: 305px;
+  }
+  #mainVisual .visual_wrap li{
+    height: 305px;
+  }
+
+  #mainVisual .visual_wrap .visual_txt .txt_wrap p.txt_sub_title{
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  #mainVisual .visual_wrap .visual_txt .txt_wrap h3.txt_title{
+    font-size: 25px;
+  }
+
+  #mainVisual .visual_wrap .visual_txt .txt_wrap p.txt_text{
+    font-size: 22px;
+    padding-top: 0px;
+  }
+
+  #mainVisual div.mini-navBtn-box{
+    display: none;
+  }
+
+  #mainVisual #indiBtn {
+    bottom: 25px;
+  }
+
 }
