@@ -246,6 +246,10 @@ form {
   margin:0;
 }
 
+a.blue {
+    color: #4985ED !important;
+}
+
 /*헤더css */
 header {}
 
