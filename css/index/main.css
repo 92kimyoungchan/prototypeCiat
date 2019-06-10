@@ -121,7 +121,11 @@ span.arrow:before {
   position: absolute;
   top: 13px;
   left: 5px;
-  transition: 0.3s;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 span.arrow:after {
@@ -133,7 +137,11 @@ span.arrow:after {
   top: 19px;
   position: absolute;
   left: -8px;
-  transition: 0.3s;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .subText:hover span.arrow:before {
@@ -240,7 +248,11 @@ span.arrow:after {
   top: 21px;
   position: absolute;
   right: -35px;
-  transition: 0.3s
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .image-textWrap2 .textWrap .mainText>.btnWrap button::before{
@@ -256,7 +268,11 @@ span.arrow:after {
   position: absolute;
   top: 15px;
   right: -32px;
-  transition: 0.3s
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .image-textWrap2 .textWrap .mainText>.btnWrap:hover button::after{
