@@ -121,6 +121,7 @@ span.arrow:before {
   position: absolute;
   top: 13px;
   left: 5px;
+  transition: 0.3s;
 }
 
 span.arrow:after {
@@ -132,8 +133,16 @@ span.arrow:after {
   top: 19px;
   position: absolute;
   left: -8px;
+  transition: 0.3s;
 }
 
+.subText:hover span.arrow:before {
+    left: 15px;
+}
+
+.subText:hover span.arrow:after {
+    left: 2px;
+}
 
 @media only screen and (max-width: 1079px) {
 
@@ -154,6 +163,17 @@ span.arrow:after {
     }
 }
 
+@media only screen and (max-width: 460px) {
+  .card-content:nth-of-type(3n){
+      margin-right: 0px;
+  }
+  .card-content:nth-of-type(2n){
+      margin-right: 0px;
+  }
+  .card-content {
+      width: 100%;
+    }
+}
 
 /* 하단 overlay   */
 .image-textWrap2 {
@@ -220,6 +240,7 @@ span.arrow:after {
   top: 21px;
   position: absolute;
   right: -35px;
+  transition: 0.3s
 }
 
 .image-textWrap2 .textWrap .mainText>.btnWrap button::before{
@@ -235,7 +256,15 @@ span.arrow:after {
   position: absolute;
   top: 15px;
   right: -32px;
+  transition: 0.3s
+}
 
+.image-textWrap2 .textWrap .mainText>.btnWrap:hover button::after{
+  right: -43px;
+}
+
+.image-textWrap2 .textWrap .mainText>.btnWrap:hover button::before{
+  right: -40px;
 }
 
 .image-textWrap2 .textWrap .mainText>.btnWrap button span {
@@ -288,4 +317,11 @@ span.arrow:after {
     color: #4984ec;
     font-size: 33px;
   }
+}
+
+@media only screen and (max-width: 560px) {
+.image-textWrap2 .textWrap .mainText>p {
+    font-size: 23px;
+    line-height: 46px;
+}
 }

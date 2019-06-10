@@ -100,3 +100,10 @@ span.select2-selection__arrow:before {
     padding-right: 10px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  span.select2-selection__arrow:before {
+      right: 7px;
+  }
+
+}
