@@ -125,6 +125,15 @@
     url('../fonts/NanumSquareEB?#iefix') format('embedded-opentype');
 }
 
+@font-face {
+  font-family: 'JejuMyeongjo-Regular';
+  font-style: Regular;
+  font-weight: 400;
+  src:local(※),
+    url("../fonts/JejuMyeongjo.woff") format('woff'),
+    url('../fonts/JejuMyeongjo?#iefix') format('embedded-opentype');
+}
+
 Righteous-Regular
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
@@ -263,175 +272,21 @@ a.blue {
     color: #4985ED !important;
 }
 
-/*헤더css */
-header {}
-
-  header .headerWrap {
-      position: absolute;
-      width: 100%;
-  }
-
-.headerWrap .navigationStatus {
-
-}
-
-.navigationStatus ul {
-  margin: 0;
-  float: right;
-  padding: 8px 0;
-  display: flex;
-}
-
-.navigationStatus ul li {
-  position: relative;
-}
-
-.navigationStatus ul li a {
-  display: inline-block;
-  padding: 0 6.5px;
-}
-
-.navigationStatus ul li:nth-of-type(2) a {
-  padding: 0 6.5px 0 12.5px;
-}
-
-.navigationStatus ul li:nth-of-type(2) a:before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 15px;
-  top: 6px;
-  background: #434343;
-  left: 3px;
-}
-
-.headerWrap .navigationWrap {
-  height: 84px;
-  float: left;
-  width: calc(100% - 84px);
-}
-
-.navigationWrap .logo {
-  padding: 12px 0;
-  float: left;
-}
-
-.navigationWrap .logo .imgWrap { width: 120px;}
-
-/* .headerWrap .navigationWrap ul.navigation {
-  flex-grow: 1;
-  margin: 0 145px;
-  display: flex;
-} */
-
-ul.navigation li.navigationColumn {
-  width: calc(100% /4);
-  text-align: center;
-  position: relative;
-}
-
-ul.navigation li.navigationColumn a.root {
-  display: inline-block;
-  line-height: 46px;
-  padding: 15px 0;
-}
-
-ul.navigation li ul.dropMenu {
-  display: none;
-}
-
-ul.navigation li ul.dropMenu li {}
-
-ul.navigation li ul.dropMenu li a {
-  display:inline-block;
-  line-height: 43px;
-}
-
-ul.navigation li.active a {
-  border-bottom: 1px solid #4985ED;
-}
-
-ul.navigation li.active a.active {
-  color: 1px solid #4985ED;
-}
-
-ul.navigation:not(.prohibition) li:hover ul.dropMenu {
-  display: block;
-  position: absolute;
-  width: 100%;
-  border-top: 5px solid #4985ED;
-  transition:all 0.2s ease-out;
-  background: white;
-  z-index: 98;
-}
-
-.headerWrap div.uber {
-  width: 84px;
-  height: 84px;
-  background-color:#EDB649;
-  float: right;
-  position: relative;
-}
-
-div.uber .uberButton {
-  padding: 22.5px;
-}
-
-div.uber .uberButton a {
-    position: absolute;
-    padding: 0px;
-    margin: 0px;
-    left: calc(50% - 14.875px);
-    top: calc(50% - 17px);
-}
-
-div.uber .uberButton a i {
-  color: white;
-  font-size: 34px;
+.image-textWrap img {
+    width: 100%;
 }
 
 
-div.uber.active .uberButton a {
-  color: white;
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-div.uber .uberMenuWrap {
-  display: none;
+.container{
+	margin: 0 auto;
 }
 
-div.uber.active .uberMenuWrap {
-  display: block;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  background: white;
-  height: 176.36px;
-  margin-top: 2.5px;
-  z-index:99;
-  transition:all 0.2s ease-out;
-}
-
-.uberMenuWrap ul.uberMenu {
-  margin: 0;
-  position: inherit;
-  display: FLEX;
-  padding: 20px 0;
-}
-
-ul.uberMenu li.uberColumn {
-  width: calc(100% / 4);
-  text-align: center;
-}
-
-ul.uberMenu li.uberColumn ul {}
-
-li.uberColumn ul li {}
-
-li.uberColumn ul li a {
-  display: inline-block;
-  line-height: 46px;
-}
-/*헤더css 끝*/
 
 /*메인- 롤링배너*/
 .rollingBanner {
@@ -629,44 +484,132 @@ background: #DBDBDB;
     background-color: #4985ED;
 }
 
+
+.middleBanner {
+    width: 100%;
+    background-image: url('../images/main/middleBanner2545.png');
+    height: 498px;
+    position: absolute;
+    top: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    filter: alpha(opacity=0);
+    -ms-background-position-x: 50%;
+    background-position-x: 50%;
+    -ms-background-position-y: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+.image-textWrap{
+  height: 498px;
+}
+
+
+
+
+
 .image-textWrap {}
 
 .image-textWrap .textWrap {
-    position: absolute;
-    /* left: 50%; */
-    top: 0;
-    text-align: center;
-    width: 100%;
+  position: absolute;
+  top: calc(50% - 208px);
+  text-align: center;
+  width: 100%;
 }
 
 .image-textWrap .textWrap .mainText {
     margin-top: 40px;
+    font-family: 'JejuMyeongjo-Regular';
 }
 
 .image-textWrap .textWrap .mainText h3 {
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 15px;
+  font-size: 41px;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 30px;
 }
 
 
 .image-textWrap .textWrap .mainText p {
-    font-size: 19px;
-    line-height: 30px;
-    color: #434343;
+  font-size: 25px;
+  line-height: 40px;
+  color: #434343;
+  font-weight: 300;
+  letter-spacing: -0.3px;
 }
 
 .image-textWrap .textWrap .subText {
-    margin-top: 20px;
+    margin-top: 60px;
     /* color: #434343; */
 }
 
 .image-textWrap .textWrap .subText p {
-    color: #434343;
-    font-weight: 400;
-    letter-spacing: -1px;
+  color: #434343;
+  font-weight: 350;
+  letter-spacing: -0.3px;
+  font-size: 22px;
 }
 
 .image-textWrap .textWrap .subText span {
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 991px) {
+
+  .middleBanner {
+    background-image: url('../images/main/middleBanner992.png');
+    height: 376px;
+  }
+  .image-textWrap{
+    height: 376px
+  }
+  .image-textWrap .textWrap {
+      top: calc(50% - 147px);
+  }
+
+  div.image-textWrap .textWrap .mainText h3 {
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+
+  div.image-textWrap .textWrap .mainText p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  div.image-textWrap .textWrap .subText p {
+    font-size: 15px;
+  }
+
+  span.arrow:before {
+    top: 17px !important;
+  }
+
+  span.arrow:after {
+    top: 23px !important;
+  }
+
+  .image-textWrap .textWrap .subText {
+      margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .middleBanner {
+    background-image: url('../images/main/middleBanner768.png');
+  }
+
+}
+
+@media only screen and (max-width: 481px) {
+
+  .middleBanner {
+    background-image: url('../images/main/middleBanner481.png');
+  }
+
+}
+
+/* =============================== 임상시험이란 ================================*/

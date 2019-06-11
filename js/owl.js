@@ -33,8 +33,8 @@ $(document).ready(function() {
     items: 5,
     nav: true, // Show next and prev buttons
     navText: [
-      "<img src='images/main/left-arrow.png'/>",
-      "<img src='images/main/right-arrow.png'/>"
+      "<img src='images/main/miniLeftBtn.png'/>",
+      "<img src='images/main/miniRightBtn.png'/>"
     ]
 
 

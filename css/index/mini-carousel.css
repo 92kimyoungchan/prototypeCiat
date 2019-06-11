@@ -9,7 +9,7 @@
 
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
     display: block;
-    width: calc(100% - 122px);
+    width: calc(100% - 94px);
 }
 
 .partnerOwl {
@@ -28,7 +28,7 @@
 
 .owl-nav {
   position: absolute;
-  top: calc(50% - 35px);
+  top: calc(50% - 17.5px);
   color: white;
   width: 100%;
   left: 0;
@@ -37,15 +37,15 @@
 }
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-  background: #ddd;
+  /* background: #ddd; */
 }
 
 .owlc2 .owl-nav button.owl-prev {
-    left: -61px;
+    left: -37px;
 }
 
 .owlc2 .owl-nav button.owl-next {
-    right: -61px;
+    right: -37px;
 }
 
 .owlc2 button {

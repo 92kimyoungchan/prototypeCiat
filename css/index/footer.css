@@ -46,7 +46,7 @@ footer {
 @media screen and (max-width: 1167px) {
   .footer-wrap {
     width: auto;
-    margin: 0 30px;
+    margin: 0 10px;
     padding: 30px 0;
   }
 
