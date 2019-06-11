@@ -266,7 +266,7 @@ p.sourceId a:first-of-type {
 }
 
 .clinical_bio_textBox>.clinical_bio_text1 {
-  ine-height: 30px;
+  line-height: 30px;
   color: rgba(80, 80, 80, 0.8);
   font-weight: normal;
 }
@@ -571,6 +571,8 @@ div.clinical_content_box p {
   cursor: pointer;
 }
 
+/* 반응형 */
+
 @media screen and (max-width:880px) {
   div.clinical_imgText>.clinical_text p {
     font-weight: normal;
@@ -647,6 +649,22 @@ div.clinical_content_box p {
     font-size: 16px;
     line-height: 28px;
   }
+
+  .clinical_bio_content>.clinical_bio_pContent {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .clinical_bio_textBox>.clinical_bio_text1 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .clinical_bio_textBox>.clinical_bio_text2 {
+    margin: 20px 0 50px;
+    line-height: 28px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width:480px) {
@@ -669,7 +687,7 @@ div.clinical_content_box p {
     line-height: 35px;
   }
   div.clinical_info_content_box h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   div.clinical_content_qualify>.clinical_qualify_title>p:first-of-type {
     font-size: 16px;
@@ -678,8 +696,26 @@ div.clinical_content_box p {
   .info_hr_border1 {
     margin-bottom: 30px;
   }
-  div.clinical_info_content_box p {
+  .info_categori_content>.info_categori_title {
     font-size: 14px;
     line-height: 24px;
+  }
+  .info_hr_border2 {
+    margin-bottom: 0;
+  }
+
+  .clinical_bio_justice h2 {
+    font-size: 20px;
+  }
+
+  div.infoEdu-downBox {
+    max-width: 100%;
+  }
+  div.subP-clinical {
+    margin-top: 0;
+  }
+  div.subP-clinical>h2 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
   }
 }

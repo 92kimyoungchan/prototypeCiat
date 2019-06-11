@@ -1,127 +1,120 @@
 @charset "UTF-8";
 
-
-.subPage h2 {
-font-size: 27px;
-padding-bottom: 10px;
-color: #4985ed;
-font-weight:bold;
-letter-spacing:0.41px;
+.subPage {
+  padding: 55px 10px 35px;
 }
 
+.subPage h2 {
+  font-size: 27px;
+  padding-bottom: 10px;
+  color: #4985ed;
+  font-weight: bold;
+  letter-spacing: 0.41px;
+}
 
-	.b-bottom {
-	  border-bottom: 1.4px solid #95989a;
-	    margin-bottom: 20px;
-
+.b-bottom {
+  border-bottom: 1.4px solid #95989a;
+  margin-bottom: 20px;
 }
 
 div.accordian {
-	border-bottom:1px solid #ddd;
-	padding:12px 3px;
-	cursor:pointer;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 3px;
+  cursor: pointer;
 }
 
 div.accordian:after {
-	clear:both;
-	display:block;
-	content:"";
+  clear: both;
+  display: block;
+  content: "";
 }
 
 div.accordian.start {
-	border-top:2px solid black;
-	margin-top:35px;
+  border-top: 2px solid black;
+  margin-top: 35px;
 }
 
-
 div.accordian .question {
-	font-size:18px;
-	font-weight:bold;
-	word-spacing:0.5px;
-	margin:0 5px 0;
-	float:left;
+  font-size: 18px;
+  font-weight: bold;
+  word-spacing: 0.5px;
+  margin: 0 5px 0;
+  float: left;
 }
 
 div.accordian .questionContent {
-	margin:0;
-	font-weight:bold;
-	float: left;
-	line-height:27px;
-	margin-left:8px;
+  margin: 0;
+  font-weight: bold;
+  float: left;
+  line-height: 27px;
+  margin-left: 8px;
 }
 
 div.accordian i {
-	float:right;
-	margin:7px 3px 0 0;
-	font-size:17px;
-	cursor:pointer;
+  float: right;
+  margin: 7px 3px 0 0;
+  font-size: 17px;
+  cursor: pointer;
 }
 
 div.accordianContent {
-	padding:5px 10px;
-	background-color:#eef2f5;
-
+  padding: 5px 10px;
+  background-color: #eef2f5;
 }
 
 div.accordianContent:after {
-	clear:both;
-	display:block;
-	content:"";
+  clear: both;
+  display: block;
+  content: "";
 }
 
 div.accordianContent .answer {
-	float:left;
-	font-size:18px;
-	font-weight:bold;
-	color:#4985ed;
-	margin:17px 0 0 12px;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4985ed;
+  margin: 17px 0 0 12px;
 }
 
 div.accordianContent .answerContent {
-
-/* float: left;
+  /* float: left;
 
 width: calc(100% - 24px); */
 }
 
-
 div.accordianContent .answerContent p {
-	display:block;
-	margin:20px 20px 20px 40px;
-	font-size:14px;
-	font-weight:400;
+  display: block;
+  margin: 20px 20px 20px 40px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 div.accordianContent .answerContent a {
-	color:#4985ed;
+  color: #4985ed;
 }
 
-div.accordianContent .answerContent br {
+div.accordianContent .answerContent br {}
 
+div.accordian_rotate i {
+  transform: rotate(180deg);
 }
 
-
-div.accordian_rotate i{
-   transform: rotate(180deg);
+.accordian_layer i {
+  transition: all 0.3s ease-out;
 }
-
-.accordian_layer i{
-   transition: all 0.3s ease-out;
-}
-
 
 div.accordian_select {
-	background: #4985ed;
-    color: #ffffff;
-    cursor:pointer;
+  background: #4985ed;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-div.accordian.accordian_select > p{
-	  color: #ffffff;
+div.accordian.accordian_select>p {
+  color: #ffffff;
 }
 
 @media screen and (max-width:480px) {
-	div.accordian .questionContent {
-		white-space: pre-line;
-	}
+  div.accordian .questionContent {
+    white-space: pre-line;
+  }
 }

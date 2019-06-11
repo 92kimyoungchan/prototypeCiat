@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+/* line-height  */
+.line-height-32{line-height: 32px !important;}
+
 /* ==  margin == */
 
 .margin-0{margin: 0px !important;}
@@ -548,7 +552,7 @@
 .markNumber1{
     position: relative;
    padding-left: 20px !important;
-    
+
 }
 .markNumber1:before {
    content: '1.';
@@ -559,7 +563,7 @@
 .markNumber2{
     position: relative;
    padding-left: 20px !important;
-    
+
 }
 
 
@@ -577,7 +581,7 @@
 .markNumber3{
     position: relative;
    padding-left: 20px !important;
-    
+
 }
 .markNumber4:before {
    content: '4.';
@@ -613,4 +617,3 @@
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
-

@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+/* 임상시험 제대로 알기 */
+.contentBox h2 {
+  margin: 30px 0 15px;
+  padding: 0;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.41px;
+  color: #434343;
+}
+
+.imgTextWrap img {
+  width: 100%;
+}
+
+.imgTextWrap {
+  float: left;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.halfTextBox {
+  display: inline-block;
+  width: calc(100% - 427px);
+}
+
+.halfTextBox p {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  font-style: italic;
+  color: rgba(80, 80, 80, 0.8);
+  word-spacing: 0;
+}
+
+.imgTextBox {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.contentHeader.small {
+  margin: 30px 0 12px 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contentHeader.blue {
+  color: #4985ed;
+}
+
+.contentBox {
+  margin-bottom: 30px;
+}
+
+.contentBox p {
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  color: rgba(80, 80, 80, 0.8);
+}
+
+.infoTable {
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.infoTable caption {
+  display: none;
+}
+
+.infoTable th {
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 18px;
+}
+
+.infoTable th:nth-of-type(2) {
+  min-width: 180px;
+}
+
+.infoTable tr:first-of-type {
+  background: #efefef;
+}
+
+.infoTable tr td:first-of-type {
+  text-align: center;
+}
+
+.infoTable tr td:nth-of-type(2) {
+  text-align: center;
+}
+
+.infoTable tr td {
+  font-size: 17px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 15px;
+}
+
+.infoTable tr p {
+  line-height: 32px;
+}
+
+.contentWrap .sourceId {
+  margin-top: 22.5px;
+  font-weight: 450 !important;
+  color: #6a6a6a !important;
+  width: 310px;
+  border: 0px solid black;
+  border-width: 1px 0px 1px 0;
+  padding: 7.5px 0;
+  float: right;
+  cursor: pointer;
+}
+
+.contentBox.noHeader {
+  margin: 30px 0;
+}
+
+.contentBox .contentBody.blue {
+  color: #4985ed;
+  margin-bottom: 0;
+}
+
+.contentBox .contentBody {
+  line-height: 30px;
+  color: rgba(80, 80, 80, 0.8);
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* 임상/생동성시험 참여방법 */
+.mobileHeader {
+  display: none;
+}
+
+.subP {
+  margin-bottom: 50px;
+}
+
+.subP h2 {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-size: 25px;
+  color: #434343;
+  font-weight: bold;
+  color: #434343;
+}
+
+.subP .imgWrap.center {
+  width: 815px;
+  margin: 0 auto;
+}
+
+.subP .imgWrap {
+  width: 100%;
+}
+
+.contentTableWrap {
+  display: flex;
+}
+
+.contentTableWrap .iconBox {
+  width: 100px;
+}
+
+.contentTableWrap .iconBox img {
+  height: auto;
+}
+
+.contentTableWrap .contentBox {
+  padding-left: 45px;
+}
+
+.contentTableWrap .contentBody p {
+  line-height: 32px;
+}
+
+.contentTableWrap .contentHeader.small.blue {
+  margin: 0 0 10px;
+}
+
+/* 참여자가 고려할 사항 */
+.mobileImgBox {
+  display: none;
+  width: 100%;
+}
+
+.mobileImgBox img {
+  width: 100%;
+}
+
+.imgWrap.full .imgBox img {
+  width: 100%;
+}
+
+.imgWrap.full {
+  width: 100%;
+}
+
+.subPage .subP h2 {
+  margin: 0 0 15px;
+}
+
+.contentBox.blank .contentTitle p {
+  margin: 30px 0;
+  font-size: 24px;
+  padding: 10px 0 0;
+  font-family: 'NanumSquare';
+  color: #4985ed;
+  text-align: center;
+  line-height: 40px;
+}
+
+.contentBox.blank p {
+  margin: 10px 0;
+}
+
+.contentBox .contentTitle p {
+  color: #4985ed;
+  font-weight: 600;
+  margin: 10px 0 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.contentBox .contentTitle p i {
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  font-size: 8px;
+}
+
+hr {
+  border-top: 2px solid rgba(0, 0, 0, 0.1)
+}
+
+.rowText p {
+  line-height: 32px;
+}
+
+.imgCaption {
+  font-style: italic;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1290px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .subP .imgWrap.center {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentTableWrap {
+    display: block;
+  }
+
+  .contentTableWrap .iconBox {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20PX;
+  }
+
+  .contentTableWrap .contentBox {
+    padding-left: 0;
+  }
+
+  .contentTableWrap .contentHeader.small.blue {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .subP h2 {
+    font-size: 22px;
+  }
+
+  .imgWrap.full .imgBox {
+    display: none;
+  }
+
+  .mobileImgBox {
+    display: block;
+  }
+
+  .contentBox.blank .contentTitle p {
+    margin: 20px 0;
+    font-size: 19px;
+    line-height: 35px;
+  }
+
+  .contentBox p {
+    font-size: 15px;
+  }
+
+  .contentBox .contentTitle p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .imgCaption {
+    font-size: 13px;
+  }
+
+  .rowText {
+    margin-top: 5px;
+  }
+
+  .rowText p {
+    line-height: 24px;
+  }
+
+  .contentTableWrap .contentBody p {
+    line-height: 24px;
+  }
+}
