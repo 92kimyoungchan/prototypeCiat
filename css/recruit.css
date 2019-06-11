@@ -1,0 +1,2453 @@
+@charset "UTF-8";
+
+
+.recruit-box-search {
+
+}
+
+.recruit-box-search ul.nav {
+  display:flex;
+  width:100%;
+  border-bottom:0;
+  flex-wrap:wrap;
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+}
+
+.recruit-box-search ul.nav li {
+  text-align:center;
+  float:left;
+  padding:10px 0;
+  font-weight:bold;
+  background:#3caa69;
+  height:10px;
+}
+
+
+/* 공통 */
+
+
+.warningWrapper {
+	padding: 25px 0;
+	margin-bottom: 35px;
+	border-radius: 4px;
+	border: 1.6px solid #3caa69;
+}
+
+.warningWrapper h2 {
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+.warningWrapper p {
+	padding: 0 20px;
+	margin-bottom: 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+.checkmark {
+  position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+border-radius: 4px;
+width: 20px;
+border: 1px solid #c3c3c3;
+background-color: white;
+cursor: pointer;
+}
+
+
+.checkmark:after {
+  content: "";
+      position: absolute;
+      display: none;
+}
+
+.labelCheck input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.labelCheck input:checked ~ .checkmark:after {
+  display:block;
+}
+
+.labelCheck .checkmark:after {
+  left: 5px;
+    top: 2px;
+    width: 8px;
+    height: 11px;
+    border: 1px solid #3caa69;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.recruitCreate .button-box, .recruitDetail .button-box, .recruitModify .button-box {
+  text-align: center;
+    margin: 30px 0 80px;
+}
+
+.recruitCreate .button-box button, .recruitDetail .button-box button, .recruitModify .button-box button {
+  padding: 14px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    min-width: 70px;
+    cursor: pointer;
+    width: 160px;
+    border-radius: 4px;
+}
+
+.button-box  button.normalButton {
+  background: #3caa69;
+}
+
+.button-box  button:first-of-type {
+
+}
+
+.button-box  button.preView {
+  background: white;
+border: 1px solid #474f54;
+color: #474f54;
+}
+
+
+.atLeast645 {
+  display:none;
+}
+
+.atLeast480 {
+  display:none;
+}
+
+
+.recruitFilter {
+  margin:25px 0;
+  border-top:20px solid #3caa69;
+}
+
+.recruitFilter .filter {
+  padding: 25px 0;
+  border-right: 1px solid #d9d4d4;
+  border-left: 1px solid #d9d4d4;
+
+}
+
+
+
+.filter .filterArticle {
+  align-items: center;
+margin-bottom: 17px;
+
+}
+
+.filter .filterArticle:last-of-type {
+  margin-bottom: 0px;
+}
+
+.filter .filterArticle label.title {
+  padding: 0 30px;
+width: 160px;
+float: left;
+height: 37px;
+line-height: 37px;
+
+}
+
+.filter .filterArticle:last-of-type label.title {
+  height: auto;
+    line-height: inherit;
+
+
+}
+
+
+.filter .filterArticle label a {
+  font-size:16px;
+}
+
+.filter .filterArticle .filterOption:not(:first-of-type) {
+  float: left;
+    width: calc(100% - 160px);
+    height: 24px;
+line-height: 24px;
+}
+
+
+
+.filter .filterArticle .filterOption input {
+
+}
+
+.filter .filterArticle .filterOption .labelCheck {
+  padding: 7px 19px;
+margin-bottom: 0;
+border: 1px solid #cacbcc;
+margin-right: 2px;
+font-size: 14px;
+cursor: pointer;
+display:inline-block;
+}
+
+.filter .filterArticle .filterOption .labelCheck:last-of-type {
+  margin-right:0;
+}
+
+
+.filter .filterArticle .filterOption .labelRadio {
+  min-width:110px;
+  font-size:14px;
+  padding: 0px 7px 0px 33.5px;
+line-height: 20px;
+display: block;
+    position: relative;
+    user-select: none;
+    margin-bottom: 0;
+    float: left;
+    margin-right: 19px;
+    cursor: pointer;
+}
+
+.filter .filterArticle .filterOption .labelRadio input[type="radio"] {
+  position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.filter .filterArticle .filterOption .labelRadio span.checkmark {
+  border-radius: 50%;
+    top: 0px;
+    background: white;
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cacbcc !important;
+    cursor: pointer;
+}
+
+
+
+.filter .filterArticle .filterOption .labelRadio input:checked ~ .checkmark {
+  border: #a0a3a5;
+}
+
+.filter .filterArticle .filterOption .labelRadio input:checked ~ .checkmark:after {
+  display:block;
+
+}
+
+.filter .filterArticle .filterOption .labelRadio span.checkmark:after {
+  top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3dad6b;
+}
+
+.recruitFilter .filterHashtag {
+  border: 0px solid #d9d4d4;
+    border-width: 1px 0px 1px 0px;
+    display: flex;
+}
+
+.recruitFilter .filterHashtag h2.title {
+  background: #949494;
+color: white;
+width: 135px;
+padding: 25px 0px;
+text-align: center;
+font-size: 16px;
+font-weight:normal;
+}
+
+.recruitFilter .filterHashtag ul.hashtagContent {
+  margin: 0;
+    padding: 6px 10px;
+    width: calc(100% - 270px);
+    float: left;
+    list-style: none;
+}
+
+.recruitFilter .filterHashtag ul.hashtagContent li {
+  padding: 0 8px;
+    float: left;
+    margin: 10px 0;
+}
+
+.recruitFilter .filterHashtag ul.hashtagContent li span {
+  background: rgba(60, 170, 105, 0.22);
+    border-radius: 34.5px;
+    padding: 6.5px 13px;
+    font-size: 14px;
+    color: #3caa69;
+}
+
+.recruitFilter .filterHashtag ul.hashtagContent li span > span.checkmark {
+  display:none !important;
+}
+
+
+.recruitFilter .filterHashtag ul.hashtagContent li button {
+  background: url(../images/recruit/button.png) no-repeat;
+width: 15px;
+height: 15px;
+border: none;
+margin-left: 5px;
+color: white;
+cursor: pointer;
+}
+
+
+.recruitFilter .searchButton {
+  background: #3caa69;
+    color: white;
+    cursor: pointer;
+    width: 135px;
+    float: left;
+}
+
+.recruitFilter .searchButton p {
+  margin: 0;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    line-height: 74px;
+    padding: 0;
+    text-align: center;
+}
+
+.recruitFilter .searchButton p i {
+  font-size: 19px;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.recruitFilter .searchButton.mobile {
+  display:none;
+}
+
+.recruit {
+
+}
+
+.recruit h2.#point {
+  margin-bottom:0;
+  line-height:47px;
+  letter-spacing: -0.4px;
+  font-size:20px;
+  font-weight:500;
+  color:#222;
+}
+
+.recruit .recruitFront {
+  padding:0 0 30px;
+}
+
+.recruit .recruitFront .recruitHeader {
+  margin-bottom:0;
+}
+
+.recruit .recruitFront .recruitHeader button.recruitWrite {
+  padding: 6px 14px;
+    color: #3caa69;
+    background: transparent;
+    border: 1.4px solid #3caa69;
+    height: 47px;
+    float: left;
+    outline: none;
+    font-size: 16px;
+    margin-right: 55px;
+    border-radius: 4px;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.recruit .recruitFront .recruitHeader .selectGroup {
+     float: right;
+}
+
+.recruit .recruitFront .recruitHeader .selectGroup select {
+  cursor: pointer;
+  float: left;
+  position: relative;
+  font-size: 16px;
+}
+
+.recruit table.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    border-collapse: collapse;
+}
+
+.recruit table.table tr {
+  border:none;
+}
+
+.recruit table.table .table-header {
+  text-align: center;
+    background-color: #e2f3ee;
+    border-bottom: 1px solid #ddd;
+    border-top: 3px solid #3caa69;
+}
+
+.recruit table.table thead th {
+    border-bottom: none;
+    text-align: center;
+    font-size: 15px;
+    padding:12px;
+    vertical-align: middle;
+    border-top:none;
+}
+
+.recruit table.table tbody>tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.recruit .table thead th:first-of-type, .table tbody td:last-of-type {
+  text-align: unset !important;
+
+}
+
+
+.text-center .firstBox {
+  width: 27px;
+margin: 0 auto;
+}
+
+.firstBox i {
+  height: auto;
+color: #bdb1b1;
+font-size: 24px;
+opacity: 0.5;
+cursor: pointer;
+}
+
+.recruit .table tbody td {
+  border:none;
+  min-width:80px;
+  padding:12px;
+}
+
+.recruit .table tbody td:first-child {
+  vertical-align: middle;
+    text-align: unset !important;
+    min-width: 70px;
+}
+
+.recruit .table tbody td:not(:nth-of-type(3)) {
+  text-align:center;
+}
+
+.recruit .table tbody td:first-of-type, .recruit .table  tbody td.dateSet {
+    padding: 18px 16px !important;
+}
+
+.recruit .table tbody .text-center {
+  position:relative;
+}
+
+.recruit .table tbody td.dateColumn {
+
+}
+
+.recruit .table tbody td.dateColumn .table-text {
+  text-align:center;
+}
+
+.recruit .table tbody td.dateColumn .table-text span {
+  font-size: 14px;
+    letter-spacing: -0.19px;
+}
+
+.recruit .table tbody td.dateColumn .table-text span.dateDay {
+  font-weight:bold;
+}
+
+.recruit .table tbody td.dateColumn .table-text span:first-of-type {
+  line-height:26px;
+}
+
+.recruit .table tbody td.dateColumn .table-text span.dateDay {
+  font-weight: bold;
+}
+
+button.recruitWrite {
+  padding: 2px 25px;
+    color: #3caa68;
+    background: transparent;
+    border: 1.4px solid #3caa68;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    height: 47px;
+    font-weight: 450;
+}
+
+.recruit .table .info .info-article {
+  width: 59px;
+    height: 59px;
+    background: #3caa69;
+    border-radius: 50%;
+    display: table;
+    margin: 8.75px auto;
+}
+
+.recruit .table .info .info-article.other {
+  background: #2da5e1;
+
+}
+
+
+.recruit .table .info .info-article span {
+  display: table-cell;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.recruit .table .secondBox {
+  padding: 0 15px;
+    width: 100%;
+    float: left;
+}
+
+.recruit .table .secondBox .clear {
+  font-size: 12px;
+    font-weight: bold;
+}
+
+.recruit .table .secondBox .clear h6 {
+  margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.5em;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      letter-spacing: -1px;
+      white-space: normal;
+      max-width: 375px;
+      cursor: pointer;
+      height: auto;
+      word-wrap: break-word;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+}
+
+.recruit .table .secondBox .clear .mobileHead {
+  display:none;
+}
+
+.recruit .table .secondBox .clear ul {
+  margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 400;
+    height: 18px;
+    line-height: 18px;
+    list-style: none;
+}
+
+.recruit .table .secondBox .clear ul li {
+  display:inline;
+}
+
+.recruit .table .secondBox .clear ul li span {
+  font-size: 15px;
+    font-weight: normal;
+}
+
+.atLeast424 {
+  display:none;
+}
+
+textarea {
+  resize:none;
+  overflow: auto;
+  margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea.full {
+  width:100% !important;
+}
+
+/* select-box */
+.select-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.select-hidden {
+	display: none;
+	visibility: hidden;
+	padding-right: 10px;
+}
+
+.select {
+	cursor: pointer;
+	float: left;
+	position: relative;
+	font-size: 16px;
+}
+
+.select-styled {
+	border: 1px solid #ded8d8;
+	color: black;
+	background-color: transparent;
+	padding: 12px 0 12px 10px;
+	margin: 0 3px;
+	font-size: 14px;
+	width: 105px;
+}
+
+
+
+.select-styled:after {
+  content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #1c9035 transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+
+}
+
+.select-styled:hover {
+
+}
+
+.select-styled:active, .select-styled.active {
+
+}
+
+.select-styled.active:after {
+	top: 9px;
+	border-color: transparent transparent #3caa69 transparent;
+
+}
+
+
+
+.select-options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	max-height: 123px;
+	overflow-y: scroll;
+	list-style: none;
+	background-color: #f7f7f7;
+	border-radius: 2px;
+	margin:0 3px;
+	border: 1px solid #ded8d8;
+	box-shadow: 1px 1px 1px #c1c1c1;
+}
+
+.select-options li {
+	margin: 0;
+	padding: 9.5px 0 9.5px 10px;
+	font-size: 14px;
+	border-bottom: 1px solid #cacbcc;
+	-moz-transition: all 0.15s ease-in;
+	-o-transition: all 0.15s ease-in;
+	-webkit-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+
+.select-options li:last-of-type {
+	border-bottom:none;
+}
+
+.select-options li:hover {
+	color: #535353;
+	background: #ffffff;
+}
+
+.select-options li[rel="hide"] {
+	display: none;
+}
+
+.divider_transparent {
+  background: transparent;
+    clear: both;
+}
+
+
+#pagination {
+  display: flex;
+    margin: 1.75em 0;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    list-style:none;
+    padding:0;
+}
+
+#pagination li {
+  display: inline-block;
+  margin: 0 5.5px;
+  width: 33px;
+  text-align: center;
+}
+
+#pagination li a {
+  padding: 3.5px 0px !important;
+    text-align: center;
+    display: inline-block;
+    min-width: 33px;
+}
+
+.page-item.active .page-link {
+  background-color: #3caa69;
+    border-color: #3caa69;
+    color:white !important;
+    z-index:1;
+}
+
+.subPage h2 {
+font-size: 27px;
+padding-bottom: 10px;
+color: #3caa69;
+font-weight:bold;
+letter-spacing:0.41px;
+}
+
+.b-bottom {
+  border-bottom: 1.4px solid #95989a;
+    margin-bottom: 20px;
+}
+
+.subPage .recruitDetail , .subPage .recruitScreening {
+  margin-bottom:65px;
+  position: relative;
+}
+
+.subPage .recruitScreening:after, .subPage .recruitApply:after {
+  content: "신청";
+    background: #2da5e1;
+    color: white;
+    text-align: center;
+    padding: 6px 17px;
+    border-radius: 12px;
+    float: left;
+    margin-top: 0;
+    width: 62px;
+    font-size: 14.5px;
+    top:33px;
+    position: absolute;
+}
+
+.subPage .recruitDetail:after {
+  content: "생동";
+    background: #2da5e1;
+    color: white;
+    text-align: center;
+    padding: 6px 17px;
+    border-radius: 12px;
+    float: left;
+    margin-top: 0;
+    width: 62px;
+    font-size: 14.5px;
+    top:33px;
+    position: absolute;
+
+}
+
+
+
+.subPage .recruitDetail h2.superHead, .subPage .recruitScreening h2.superHead, .subPage .recruitApply h2.superHead {
+  word-break: break-word;
+      float: left;
+      width: 100%;
+      font-size: 23px;
+      text-align: center;
+      margin: 15px 0;
+      padding: 18px 0px 18px 0px;
+      font-weight: bold;
+      letter-spacing: 0.41px;
+      color: #222;
+      line-height: 34px;
+}
+
+ .subPage .recruitScreening h2.superHead, .subPage .recruitApply h2.superHead {
+    margin:15px 0 35px 0;
+ }
+
+.subPage .detail-header {
+  border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.subPage .detail-header p {
+  margin-bottom: 0;
+    padding: 6px 0;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+}
+
+.subPage .detail-header p:nth-of-type(1) {
+  float: left;
+    border: none;
+}
+
+
+.subPage .detail-header p:nth-of-type(2) {
+  float:right;
+  border:none;
+}
+.subPage .detail-header p label {
+  margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 0;
+    font-weight: 400;
+    display:inline-block;
+}
+
+
+.subPage .detail-header p label:first-of-type {
+  margin-left: 0px;
+}
+
+.subPage .detail-header p span {
+    margin-right: 12px;
+}
+
+.subPage .detail-header .divider {
+  clear: both;
+    display: block;
+    content: "";
+    padding: 0;
+    background: transparent;
+}
+
+.subPage .recruitDetail .newRecruit {
+  padding: 30px 0 0;
+}
+
+.subPage .recruitDetail .newRecruit .newRecruitHeader {
+  padding: 10px 0;
+    border-bottom: 3px solid #3caa69;
+    margin-bottom: 13px;
+}
+
+.subPage .recruitDetail .newRecruit .newRecruitHeader h2 {
+  text-align: inherit;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    color: #3caa69;
+    font-size:23px;
+    font-weight:bold;
+    letter-spacing:0.41px;
+}
+
+.newRecruit .useBorderSection {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.newRecruit .useBorderSection .newArticle {
+
+    border-width: 1px 1px 0px 1px;
+}
+
+.newRecruit .useBorderSection .newArticle:nth-of-type(2n) {
+   border-width: 1px 1px 0px 0px;
+}
+
+.newRecruit .useBorderSection .newArticle:last-of-type {
+
+}
+.newRecruit .newArticle {
+  width: 50%;
+    float: left;
+    height: 45px;
+    border: 0px solid #e4e4e4;
+}
+.newRecruit  .newArticle:after {
+  clear:both;
+  display:block;
+  content:"";
+}
+.newRecruit .newArticle label {
+  float: left;
+  width: 130px;
+  margin-bottom: 0;
+  background: #f1f1f1;
+  border: 0px solid #e4e4e4;
+  border-width: 0px 1px 0px 0px;
+  padding-left: 20px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.newRecruit  .newArticle .articleValue {
+  width: calc(100% - 130px);
+    float: left;
+    height: 45px;
+    padding-left: 20px;
+    padding-top: 11px;
+    position:relative;
+}
+
+.newRecruit  .newArticle .articleValue span {
+    font-size:14px;
+}
+
+.newRecruit  .newArticle .articleValue p {
+  margin-bottom:0;
+  float:left;
+}
+
+.newRecruit  .newArticle .articleValue p span {
+    margin: 0 7px;
+    font-size: 16px;
+
+}
+
+.newRecruit  .newArticle .articleValue p span.date {
+  font-size: 13.5px;
+  margin: 0;
+}
+
+.newRecruit  .newArticle .articleValue p span.date {
+   margin-left:4px;
+}
+
+.newRecruit .noneBorderSection {
+  margin-bottom:30px;
+}
+
+.newRecruit .noneBorderSection .newArticle {
+  width: 100%;
+    float: none;
+    border-width: 1px 1px 0px 1px;
+}
+.newRecruit .noneBorderSection .newArticle:last-of-type {
+  border-width:1px;
+}
+
+.newRecruit .newArticle label {
+  float: left;
+    width: 130px;
+    margin-bottom: 0;
+    background: #f1f1f1;
+    border: 0px solid #e4e4e4;
+    border-width: 0px 1px 0px 0px;
+    padding-left: 20px;
+    height: 45px;
+    line-height: 45px;
+    display:inline-block;
+}
+
+.recruitDetail .content {
+  margin: 35px 0 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.recruitDetail .content .content-grid {
+  margin:25px 0;
+}
+
+.recruitDetail .content .content-grid h2 {
+  margin: 8px 0;
+  color:#222;
+}
+
+.recruitDetail .content .content-grid p {
+  margin-bottom:8px;
+}
+
+.recruitDetail .content .content-grid .attachmentGrid {
+  padding: 15px 0;
+    overflow: hidden;
+}
+
+.recruitDetail .content .content-grid .attachmentGrid .buttonDiv {
+  letter-spacing: -1px;
+    border: 1px solid #3caa69;
+    padding: 15px 21px;
+    border-radius: 8px;
+    font-weight: 400;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    clear: both;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.recruitDetail .content .content-grid .attachmentGrid .buttonDiv button {
+  border: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background: none;
+    padding: 0;
+    max-width: 740px;
+    cursor:pointer;
+    color: #3caa69;
+
+}
+
+.recruitDetail .content .content-grid .attachmentGrid .buttonDiv i {
+  color: #3caa69;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.businessCard {
+  border: 1px solid #d9d4d4;
+    overflow: hidden;
+    padding: 17px 22px;
+}
+
+.businessCard .companyInfo {
+
+}
+
+.businessCard .companyInfo p {
+  float: left;
+    margin-bottom: 8px;
+    width: 50%;
+}
+
+.businessCard .companyInfo p label {
+  font-weight: bold;
+    width: 82px;
+    margin: 0 8px 0 0;
+    float: left;
+    color: #3caa69;
+    display:inline-block;
+}
+
+.businessCard .companyInfo p  span {
+  font-weight: 400;
+    float: left;
+    width: calc(100% - 90px);
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.businessCard .companyInfo p.last {
+  margin-bottom: 0;
+    width: 100%;
+}
+
+.businessCard .companyInfo p.last label {
+  margin-bottom: 0;
+}
+
+.recruitDetail .button-box {
+  text-align: center;
+    margin: 45px 0 68px;
+}
+
+.recruitDetail .button-box button {
+  margin: 40px 4px;
+    padding: 14px 20px;
+    font-size: 16px;
+    width: 160px;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 70px;
+    cursor: pointer;
+}
+
+.recruitDetail .button-box button.red {
+  background: red !important;
+  color:white;
+}
+
+.recruitDetail .button-box button:first-of-type {
+  background: transparent;
+    color: #222;
+    border: 1px solid #d9d4d4;
+}
+
+.recruitDetail .button-box button:nth-of-type(3) {
+  background: transparent;
+    color: #222;
+    border: 1px solid #d9d4d4;
+}
+
+.recruitDetail .button-box button.ghostButton {
+  background: #fff;
+    border: 1px solid #d9d4d4 !important;
+}
+
+
+
+
+/* recruit Create */
+.recruitCreate {
+  margin-top:35px;
+  background: #f5f5f5;
+    padding: 25PX;
+    border: 0px solid #cdcdcd;
+    border-width: 1px 1px 0px 1px;
+}
+.recruitCreate h2 {
+  letter-spacing: 0.41px;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #444;
+    width: 100%;
+    color:#222;
+    font-weight:bold;
+}
+
+.recruitCreate .article  {
+  padding: 5px 0;
+  border-bottom:none;
+}
+
+.recruitCreate .range-article {
+  overflow: hidden;
+    background: white;
+    margin: 40px 0;
+}
+
+.recruitCreate .range-article .labelCheck {
+  border: none;
+position: relative;
+margin: 0 5px;
+width: 105px;
+padding: 0;
+float: left;
+}
+
+.recruitCreate .range-article .labelCheck span:last-child {
+  margin-left:27px;
+  line-height:24px;
+  font-weight:400;
+}
+
+.recruitCreate .range-article .article-set {
+  float: left;
+  width: 50%;
+  padding: 30px 0 30px 30px;
+}
+
+.recruitCreate .range-article .article-set:first-of-type {
+      outline: 1px solid #e0e0e0;
+}
+
+.recruitCreate .range-article .article-set .title {
+    width: 85px;
+    float: left;
+
+}
+
+.recruitCreate .range-article .article-set .title h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 0;
+  line-height:26px;
+  border-bottom: none;
+  letter-spacing: 0.41px;
+  width: 100%;
+  font-weight:bold;
+  color:#222;
+}
+
+.recruitCreate .range-article .article-set .range-info {
+  width: calc(100% - 105px);
+   float: left;
+}
+
+.recruitCreate .range-article .article-set .range-info .checkareaJ {
+  float: left;
+    width: 48%;
+}
+
+.recruitCreate .range-article .article-set .range-info .checkareaJ p {
+  margin-bottom:15px;
+}
+
+.recruitCreate .range-article .article-set .range-info .checkareaJ p span {
+  line-height: 26px;
+  display:inline-block;
+}
+
+.recruitCreate .range-article .article-set .range-info .checkareaJ p input {
+  width: 55.8px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  padding: 0px 6px;
+  display:inline-block;
+  line-height: 25px;
+}
+
+.recruitCreate .range-article .article-set .range-info .checkareaJ label:first-of-type {
+  margin-left:0;
+}
+.recruitCreate .range-article .article-set .range-info .checkareaJ label:last-of-type {
+  margin-right:0;
+}
+.recruitCreate .range-article .article-set .range-info .checkareaJ label.labelCheck {
+
+}
+
+.recruitCreate .range-article .article-set .range-info .checkareaJ label.labelCheck span.checkmark {
+  top:2px;
+}
+
+
+.recruitCreate .article .labelRadio .checkmark {
+  border-radius: 50%;
+top: 0px;
+background: white;
+left: 0px;
+position: absolute;
+width: 20px;
+border: none;
+height: 20px;
+border: 1px solid #cacbcc;
+    cursor: pointer;
+}
+
+.recruitCreate .article .checkmark:after {
+  content: "";
+    position: absolute;
+    display: none;
+}
+
+.recruitCreate .article .labelRadio .checkmark:after {
+  top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3dad6b;
+}
+
+.recruitCreate .article .labelRadio  input:checked ~ .checkmark:after {
+  display:block;
+}
+
+
+
+
+.recruitCreate .article .labelRadio input:checked ~ .checkmark {
+      border: #a0a3a5;
+}
+
+
+.recruitCreate .article .labelRadio input {
+  position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.recruitCreate .article .checkMother {
+  float: left;
+width: calc(100% - 155px);
+height: 31px;
+padding: 5.5px 0;
+}
+
+.recruitCreate .article .checkMother .labelRadio {
+  margin-bottom: 0;
+  float: left;
+    font-size: 16px;
+    letter-spacing: 0.41px;
+    border: none;
+position: relative;
+margin: 0 5px;
+padding: 0;
+line-height: 20px;
+width: 105px;
+    min-width: unset;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.recruitCreate .article .checkMother .labelRadio .checkmark {
+  border-radius: 50%;
+top: 0px;
+background: white;
+left: 0px;
+position: absolute;
+width: 20px;
+height: 20px;
+    border: 1px solid #cacbcc !important;
+}
+
+
+.recruitCreate .article .checkMother .labelRadio .checkmark:after {
+
+}
+.recruitCreate .article .checkMother .labelRadio span:last-child {
+  margin-left: 30px;
+line-height: 20px;
+font-size: 14px;
+}
+
+
+.recruitCreate .article .multiple {
+  background: white;
+    margin: 0 12px 0 0;
+    float: left;
+    font-size: 18px;
+}
+
+.recruitCreate .article input.hasDatepicker {
+  background: url(../images/recruit/calendar.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 12px;
+    width: 185px;
+}
+
+.recruitCreate .article .calendar-set span {
+  margin: 0;
+    padding: 6px 12px;
+    float: left;
+    height: 34px;
+}
+
+.recruitCreate .article .calendar-set span.bg {
+  background: whitesmoke;
+}
+
+.recruitCreate .article .calendar-set span:last-of-type {
+
+}
+
+.recruitCreate .article p span {
+  float: left;
+    font-size: 18px;
+    padding: 3px 0;
+    margin: 0 5px;
+}
+.recruitCreate .article input, .applyForm .article input {
+  height: 34px;
+    border: 1px solid #ded8d8;
+    display: block;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14.3px;
+    border-radius: 4px;
+    outline:none;
+    overflow:visible;
+}
+
+.recruitCreate .article .combine input {
+  margin-right: 8px;
+}
+
+.recruitCreate .article.split {
+  padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.recruitCreate .article.split .combine {
+  overflow: hidden;
+}
+
+
+
+
+
+.recruitCreate .article.split .combine .thumWrapper {
+  float:left;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio {
+  border: none;
+    position: relative;
+    margin: 0 5px;
+    padding: 0 !important;
+    min-width: unset !important;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom:0;
+    float: left;
+    font-size: 16px;
+    letter-spacing: 0.41px;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio.thum {
+  line-height: 34px;
+  width: auto !important;
+   margin-right: 10px;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio.thum input {
+
+  opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: none;
+    position: absolute;
+    height: auto;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio span {
+  font-weight: 400;
+    font-size: 16px;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio.thum  span.checkmark {
+  top:7px;
+  border-radius:50%;
+
+    background: white;
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cacbcc !important;
+    cursor:pointer;
+
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio.thum  span.checkmark:after {
+  top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3dad6b;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio span:not(.checkmark) {
+  line-height: 34px;
+    margin-left: 25px;
+
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio span:last-child {
+  margin-left: 30px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio input:checked ~ .checkmark {
+    border: #a0a3a5;
+}
+
+.recruitCreate .article.split .combine .thumWrapper .labelRadio input:checked ~ .checkmark:after {
+  display:block;
+}
+
+.recruitCreate .article.split .combine input#testFee, .recruitCreate .article.split.combine textarea#writeArea {
+    width: 340px;
+    margin-right: 25px;
+
+}
+
+.recruitCreate .article label span {
+  font-weight: 400;
+    font-size: 16px;
+}
+
+.recruitCreate .article .testdateContainer {
+
+}
+
+.recruitCreate .article .testdateContainer .calendar-set {
+  margin-bottom: 10px;
+}
+
+.recruitCreate .article .testdateContainer .calendar-set .article-title.examing {
+  width: 100%;
+}
+
+.recruitCreate .article .testdateContainer .calendar-set .article-title.period {
+  text-align: right;
+}
+
+textarea#writeArea {
+  float: left;
+    display: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #ded8d8;
+    border-radius: 4px;
+    font-size: 14.3px;
+    min-height: 86px;
+}
+
+.recruitCreate .article label.article-title {
+  margin-bottom: 0;
+    min-width: 135px;
+    float: left;
+    font-size: 16px;
+    letter-spacing: 0.41px;
+    font-weight: 400;
+    margin-right: 20px;
+    line-height: 34px;
+    display: inline-block;
+}
+
+.recruitCreate .article label.article-title.hidden2 {
+  visibility: hidden;
+    height: 34px;
+}
+
+.recruitCreate .article p:not(.multiple) {
+  float: left;
+    font-size: 18px;
+    width: calc(100% - 155px);
+    margin-bottom: 0;
+    line-height: 31px;
+    font-weight:300;
+    word-spacing:0px;
+    color:#222;
+}
+
+.recruitCreate .article .add {
+  clear: both;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.recruitCreate .article .add button {
+  font-size: 15px;
+    padding: 0px 40px;
+    margin: 0 8px;
+    background: #3caa69;
+    color: #ffffff;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    border: 1px solid #3caa69 !important;
+    cursor: pointer;
+}
+
+.recruitCreate .article .add button i {
+
+}
+
+.recruitCreate .article .add button.mobile {
+  display:none;
+}
+
+.recruitCreate hr {
+  margin:50px 0;
+}
+
+.recruitCreate h2 {
+  letter-spacing: 0.41px;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #444;
+    width: 100%;
+    color:#222;
+}
+
+.recruitCreate .article .dateContainer input:not(.hasDatepicker) {
+  width: 70px;
+    min-width: auto;
+}
+
+
+.recruitCreate .article .dateContainer .calendar-set {
+  margin-bottom: 10px;
+}
+
+.recruitCreate .article .dateContainer .calendar-set button.deleteDate {
+  float: left;
+    font-size: 14px;
+    padding: 0px 13px;
+    margin: 0;
+    height: 34px;
+    color: #fff;
+    line-height: 31px;
+    border-radius: 4px;
+    background: #fd6a6b;
+    border:none;
+    cursor:pointer;
+}
+
+.recruitCreate .article .dateContainer .calendar-set button.deleteDate.mobile {
+  display:none;
+}
+
+
+
+.recruitCreate .article .labelCheck {
+  border: none;
+    position: relative;
+    padding: 0 !important;
+    margin: 0 5px;
+    float: left;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.recruitCreate .article .labelCheck input {
+  position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.recruitCreate .article .labelCheck span.checkmark {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    top: 7.5px;
+    margin:0;
+    float:left;
+}
+
+.recruitCreate .article .labelCheck span {
+  margin: 0;
+font-weight: 400;
+float: left;
+height: 34px;
+}
+
+.recruitCreate .article .labelCheck span:last-of-type {
+  margin-left: 21.5px;
+    padding: 6px 9px;
+    line-height: 22px;
+        font-size: 14px;
+}
+
+.recruitCreate .article .dateContainer .calendar-set #deleteDate1 {
+  float: left;
+  font-size: 14px;
+  padding: 0px 13px;
+  margin: 0;
+  height: 34px;
+  color: #fff;
+  line-height: 31px;
+  border-radius: 4px;
+  background: #fd6a6b;
+  border: none;
+    cursor: pointer;
+}
+
+
+.recruitCreate input[type=text].address {
+  width: calc(100% - 145px);
+    max-width: none;
+}
+
+.recruitCreate .article p.address input.findAddress {
+  width: 130px;
+    margin-left: 15px;
+    background: #3caa69;
+    color: white;
+    cursor:pointer;
+}
+
+.recruitCreate .warnText {
+  margin:25px 0;
+}
+
+.recruitCreate p.infoWord {
+  letter-spacing: 0.36px;
+    font-size: 18px;
+    margin-top: 1rem;
+    text-align: center;
+    color: #fd6a6b;
+    font-weight: 450;
+}
+
+ul.displayBoard {
+  clear:both;
+  flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 0;
+}
+
+ul.displayBoard li {
+  width: 50%;
+text-align: center;
+float: left;
+padding: 14px 0;
+border: 1px solid #d9d4d4;
+}
+
+ul.displayBoard li:first-of-type {
+  border-right: none !important;
+}
+
+ul.displayBoard li span {
+  font-size: 16px;
+}
+
+ul.displayBoard li.active {
+      box-shadow: 0px 0 0 0 #c3c3c3 inset, 0 -8px 0 0 #3caa69 inset, 0px 0px 0 0 #c3c3c3 inset, 0px 0 0 0 #c3c3c3 inset, 0 0px 0 0 #c3c3c3 inset;
+}
+ul.displayBoard li.active span {
+  color: #3caa69;
+    font-weight: bold;
+}
+
+.precautions {
+      margin: 15px 0 45px 0;
+}
+
+.precautions .article {
+
+}
+
+.precautions .article label {
+  font-size: 15px;
+    margin-bottom: 0;
+    color: red;
+    font-weight: 600;
+    width: 80px;
+    float: left;
+    min-height: 22px;
+}
+
+.precautions .article p {
+  font-size: 15px;
+    margin-bottom: 0;
+    color: red;
+    font-weight: 600;
+    width: calc(100% - 80px);
+    float: left;
+}
+
+.precautions .article p:first-of-type {
+  margin-top:0;
+}
+
+.applyForm h2 {
+  border-bottom: 2px solid #444;
+    padding: 0 0 15px 0;
+    font-size: 20px;
+    color:#222;
+    margin-top: 30px;
+}
+
+.applyForm .dateFull {
+  padding:30px;
+}
+
+.applyForm .screenigCal  {
+  float: left;
+width: 325px;
+margin-right: 40px;
+}
+
+.applyForm .dateFull .screeningNone {
+  float: left;
+width: calc(100% - 453px);
+height: 215.5px;
+padding: 60px 0;
+background-color: white;
+}
+
+.applyForm .dateFull .screeningNone h2 {
+  border-bottom: none;
+    margin-top: 0px;
+    font-weight:bold;
+    letter-spacing: 0.41px;
+    color:#222;
+}
+
+.applyForm .dateFull .screeningNone span {
+
+}
+
+.applyForm .holderBox {
+  float: left;
+    width: calc(100% - 365px);
+    padding-top: 40px;
+    display: none;
+    border-bottom: 1px solid #d9d4d4;
+}
+
+.applyForm .holderBox .articleHolder {
+  border: 0px solid #d9d4d4;
+    border-width: 1px 0px 1px 0px;
+}
+
+.applyForm .holderBox .articleHolder:first-of-type {
+
+}
+
+.applyForm .holderBox .articleHolder .article {
+  padding: 0 !important;
+margin-top: 18px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #edebeb;
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet {
+  height: auto;
+    overflow: hidden;
+    display: table;
+    margin-bottom: 15px;
+    padding:0px 27px;
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet label {
+  font-size: 16px;
+    width: 160px;
+    margin-bottom: 0;
+    padding: 10px 0;
+    margin-right: 15px;
+    line-height: 0.9;
+    border-right: none;
+    min-width: 120px;
+    float: left;
+    letter-spacing: 0.41px;
+    display: inline-block;
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet .dateRight {
+  float:left;
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet .dateRight label.labelRadio {
+  clear: both;
+  display: block;
+    padding: 10px 0 !important;
+    border: none;
+    position: relative;
+    margin: 0 5px;
+    width: 105px !important;
+    min-width: unset !important;
+    float: left;
+    font-size: 16px;
+        margin-bottom: 0;
+        letter-spacing: 0.41px;
+        margin-right: 15px;
+        background-color: white;
+        cursor: pointer;
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet label.point {
+  border-top: 3px solid #3caa69;
+    width: 95px;
+    min-width: auto;
+    margin-right: 40px !important;
+    background-color: white;
+    line-height: 37px;
+    padding: 0 2.5px;
+}
+
+.applyForm  .holderBox .articleHolder .article .dateSet {
+  float:left;
+}
+
+.applyForm  .holderBox .articleHolder .article .dateSet label.labelRadio {
+  margin-right: 15px;
+      margin-bottom: 0;
+      float: left;
+    font-size: 16px;
+    letter-spacing: 0.41px;
+    clear: both;
+    display: block;
+    padding: 10px 0 !important;
+    border: none;
+    position: relative;
+    margin: 0 5px;
+    width: 105px !important;
+    min-width: unset !important;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet label.labelRadio input {
+  display: none;
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet label.labelRadio span.checkmark {
+      top: 10px;
+      border-radius: 50%;
+      background: white;
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cacbcc !important;
+        cursor: pointer;
+
+}
+
+.applyForm .holderBox .articleHolder .article .dateSet label.labelRadio span:last-of-type {
+  margin-left: 30px;
+line-height: 20px;
+font-size: 14px;
+}
+
+.applyForm .screeningResult {
+  margin: 45px 0;
+    height: 120px;
+    line-height: 70px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.27px;
+    background: #e7f1ec;
+}
+
+.applyForm .screeningResult span {
+  font-size: 17px;
+    font-weight: bold;
+}
+
+.applyForm .screeningResult p {
+  font-size: 17px;
+    font-weight: 600;
+}
+
+.applyForm .button-box {
+      text-align: center;
+      margin: 30px 0 80px 0;
+
+}
+
+.applyForm .button-box input {
+  margin: 0 5px;
+padding: 14px 20px;
+font-size: 16px;
+width: 160px;
+color: white;
+border: none;
+background: #3caa69;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.recruitApply {
+  margin-bottom: 65px;
+position: relative
+}
+
+.recruitApply .applyForm .article {
+  padding:15px 0;
+  margin-bottom:0;
+  border-bottom: 1px solid #edebeb;
+}
+
+.recruitApply .applyForm .article label {
+    margin-right: 15px;
+    margin-bottom: 0;
+    min-width: 120px;
+    float: left;
+    font-size: 16px;
+    padding: 4.5px 0;
+    letter-spacing: 0.41px;
+    display: inline-block;
+}
+
+.recruitApply .applyForm .article .input-block {
+    width: calc(100% - 135px);
+    float: left;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.recruitApply .applyForm .article .input-block span.spanButton {
+  float: left;
+  color: gray;
+  margin: 0 !important;
+    font-size: 16px !important;
+    padding: 4.5px 0 !important;
+}
+
+.recruitApply .applyForm .article .input-block p.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+    height: 10px;
+    clear: both;
+    font-size: 13px;
+    margin-bottom: 0;
+    color: red;
+    font-weight: 300;
+    line-height: 25px;
+    word-spacing: 0px;
+}
+
+
+.recruitApply .applyForm .article .input-block .select {
+  cursor: pointer;
+  float: left;
+  position: relative;
+  font-size: 16px;
+}
+
+.recruitApply .applyForm .article .input-block .select .select-hidden {
+  display: none;
+visibility: hidden;
+padding-right: 10px;
+}
+
+.recruitApply .applyForm .article .input-block .select .select-styled {
+  width: 125px;
+    border: 1px solid #97d9bb;
+    border-radius: 4px;
+    padding-left: 18px;
+    height: 34px;
+    line-height: 28px;
+    padding: 3px 36px 3px 12px;
+font-size: 14px;
+margin: 0;
+    background: white;
+}
+
+.recruitApply .applyForm .article .input-block .select .select-styled:after {
+  content: "";
+width: 0;
+height: 0;
+border: 7px solid transparent;
+border-color: #3caa69 transparent transparent transparent;
+position: absolute;
+top: 12px;
+right: 15px;
+}
+
+.recruitApply .applyForm .article .input-block .select .select-styled .select-options {
+  width: 125px;
+  margin: 0;
+  border-radius: 4px;
+  position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0;
+    max-height: 123px;
+    overflow-y: scroll;
+    list-style: none;
+    background-color: #f7f7f7;
+    border: 1px solid #ded8d8;
+    box-shadow: 1px 1px 1px #c1c1c1;
+}
+
+.recruitApply .applyForm .article .input-block .select .select-styled .select-options li {
+  margin: 0;
+    padding: 9.5px 0 9.5px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #cacbcc;
+    transition: all 0.15s ease-in;
+}
+
+.applyForm .article input.caculator {
+    border: 1px solid #97d9bb;
+    width: 105px;
+    text-align: right;
+    padding-right: 12px;
+}
+
+.applyForm .article-careful {
+  padding: 15px 0;
+}
+
+.applyForm .article-careful p {
+  margin-bottom:0;
+  font-size:15px;
+  font-weight: 300;
+    line-height: 25px;
+    word-spacing: 0px;
+    color: #222;
+    margin-top:0;
+
+}
+
+.applyForm .article-careful p strong {
+  color: red;
+  font-weight:bolder;
+}
+
+.applyForm .button-box {
+  text-align: center;
+margin: 30px 0 80px 0;
+}
+
+
+.applyForm .button-box button {
+  margin: 0 5px;
+    padding: 14px 19px;
+    font-size: 18px;
+    width: 165px;
+    background: #3caa69;
+    color: white;
+    font-weight: bold;
+    border: none;
+    min-width: 70px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.recruitDone {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.recruitDone .info-box {
+  text-align: center;
+border-bottom: 1px solid #d2d2d2;
+border-top: 1px solid #d2d2d2;
+padding: 35px 0 25px;
+width: 450px;
+margin: auto;
+margin-top: 60px;
+}
+
+.recruitDone .info-box .sticker {
+      margin-bottom: 8px;
+}
+
+.recruitDone .info-box .sticker p {
+  color: white;
+padding: 4px 17px;
+border-radius: 12px;
+margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80px;
+    background: #2da5e1;
+}
+
+.recruitDone .info-box h2 {
+  margin: 8px 0 3px 0;
+  color:#222;
+  font-size:23px;
+}
+.recruitDone .info-box p {
+      margin-bottom: 10px;
+}
+
+.recruitDone .info-box p.recruit-title {
+  font-size: 17px;
+    color: gray;
+}
+
+.recruitDone .info-box .done-info {
+  width: 385px;
+margin: 0 auto;
+}
+.recruitDone .info-box .done-info p {
+  width: 50%;
+    float: left;
+}
+
+.recruitDone .info-box .done-info p span {
+
+}
+
+.recruitDone .info-box .done-info p span:first-of-type {
+  color: #3caa69;
+font-weight: bold;
+margin-right: 10px;
+}
+
+
+.recruitDone .recruit-answer {
+  text-align: center;
+    margin-top: 45px;
+}
+
+.recruitDone .recruit-answer h2 {
+  color: #00b300;
+    font-size: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0.91px;
+}
+
+.recruitDone .recruit-answer p {
+  letter-spacing: 0.81px;
+}
+
+.recruitDone .recruit-answer p span {
+  color: #3caa69;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.recruitDone .recruit-answer p span:first-of-type {
+  margin: 0 5.5px 0 0;
+}
+
+.recruitDone .recruit-answer p span:last-of-type {
+  margin: 0 0 0 5.5px;
+}
+
+.recruitDone .button-box {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.recruitDone .button-box button {
+  background: transparent;
+      color: gray;
+      border: 1px solid gray;
+      margin-right: 8px;
+      padding: 14px 20px;
+      font-size: 16px;
+    font-weight: bold;
+    min-width: 70px;
+    cursor: pointer;
+    width: 160px;
+    border-radius: 4px;
+}
+
+
+/* 달력보기 */
+
+button.exceptDateBtn {
+  padding: 3px 10px;
+    background: #fff;
+    font-size: 14px;
+    color: #3caa68;
+    border: 1px solid #3caa68;
+    border-radius: 4px;
+    margin: 0 10px;
+    cursor:pointer;
+}
+
+.exceptDateContainer {
+  z-index: 33;
+    opacity: 0;
+    width: auto;
+    box-shadow: 2px 2px 10px #eaeaea;
+    border: 1px solid #ddd;
+    padding: 10px 5px;
+    background: #fff;
+    float: left;
+    margin-top: 15px;
+    max-width: 346px
+    position: absolute;
+    top: 42px;
+    right: calc(100% - 566px);
+}
+
+.exceptDateContainer.active {
+  opacity: 1;
+}
+
+.exceptDateContainer.form {
+  margin-bottom:35px;
+}
+
+.exceptDateContainer .exceptDateWrap {
+  left:0;
+}
+
+.ui-widget.ui-widget-content {
+ border: 1px solid #d3d3d3;
+  font-family: 'Noto Sans KR';
+  width: 325px;
+  padding: 0;
+  border: none !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+ background: transparent;
+   border: 1px solid #d9d4d4;
+   border-bottom: 0;
+   border-bottom-right-radius: 0;
+   border-bottom-left-radius: 0;
+   height: 35px;
+   padding: 0 !important
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  width: 25px !important;
+    top: 4.5px !important;
+    margin: 0 7.5px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+   color: #666 !important;
+}
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
+  background: url(../images/chevronLeft.png) no-repeat !important;
+
+}
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
+  background: url(../images/recruit/chevronRight.png) no-repeat !important;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  height: 100%;
+    line-height: 34px !important;
+}
+
+.ui-datepicker .ui-datepicker-title span {
+  font-weight: 400;
+    font-size: 13.5px;
+}
+
+.ui-datepicker th {
+  background: #eff9f0;
+    height: 45px;
+    border: 1px solid #d9d4d4 !important;
+}
+
+.ui-datepicker th span {
+  font-weight: 500;
+    text-transform: capitalize;
+    color: #6bcf74;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  background: #f1f1f1;
+}
+
+.ui-datepicker td {
+  min-width: 45px;
+    height: 45px;
+    padding: 0 !important;
+    border: 1px solid #d9d4d4 !important;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled span, .ui-widget-header .ui-state-disabled span {
+  color: #5d5d5d;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  background: #fbfbfb;
+    font-weight: 450;
+    text-align: center;
+    height: 100%;
+    line-height: 36px;
+    background: none !important;
+    border: none !important;
+}
+
+.exceptDateContainer .holderBox {
+  border-bottom: 1px solid #d9d4d4;
+  background-color: white;
+    width: 100%;
+    float: left;
+    margin: 5px auto 0 !important;
+    padding-top: 0 !important;
+}
+
+.exceptDateContainer .articleHolder {
+  border: 0px solid #d9d4d4;
+    border-width: 1px 0px 0px 0px;
+}
+
+.exceptDateContainer .articleHolder:nth-of-type(2) {
+  border-width: 1px 0px 0px 0px;
+}
+
+.exceptDateContainer .articleHolder .article {
+  padding: 0 !important;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  border-bottom: none;
+}
+
+.exceptDateContainer .articleHolder .article .dateSet {
+  padding: 0px 27px;
+  height: auto;
+    overflow: hidden;
+    display: table;
+    margin-bottom: 15px;
+}
+
+
+.exceptDateContainer .articleHolder .article .dateSet  label:not(.labelRadio) {
+  width: 94px;
+   line-height: 0.9;
+   border-right: none;
+   font-size: 16px;
+   margin-bottom: 0;
+    padding: 10px 0;
+   letter-spacing: 0.41px;
+}
+
+
+.exceptDateContainer .articleHolder .article .dateSet label.point {
+  border-top: 3.4px solid #3caa69;
+    width: 85px;
+    min-width: auto;
+    margin-right: 40px !important;
+    float:left;
+}
+
+.exceptDateContainer .articleHolder .article .dateSet .dateRight {
+  float:left;
+}
+
+.exceptDateContainer .articleHolder .article .dateSet label.labelRadio {
+  cursor:default;
+  margin-bottom:0;
+  float: left;
+    font-size: 16px;
+    letter-spacing: 0.41px;
+    background-color: white;
+    clear: both;
+    display: block;
+    padding: 10px 0 !important;
+    border: none;
+    position: relative;
+    margin: 0 5px;
+    width: 105px !important;
+    min-width: unset !important;
+    height: 45px;
+    line-height: 45px;
+}
+
+.exceptDateContainer .articleHolder .article .dateSet label.labelRadio span:last-child {
+  margin-left: 30px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.modal-content {
+    font-size: 0.8rem;
+    color: #222;
+}
+
+.recruit-detail .detail-header {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>뉴올</title>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+      <link rel="stylesheet" href="../css/index/footer.css">
+  <link rel="stylesheet" href="../css/recruit.css">
+</head>
+<body>
+  <header>
+		<div class="headerWrap">
+			<!-- 로그인 , 회원가입 등 네비게이션 최상단 메뉴 -->
+			<div class="navigationStatus">
+				<div class="container">
+					<ul class="navigationStatus-wrap">
+						<li>
+							<a href="">로그인</a>
+						</li>
+						<li>
+							<a href="">회원가입</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="navigationContent mot2">
+				<div class="navigationContent-wrap">
+								<span class="liUnder mot2"></span>
+				<div class="container">
+				<div class="navigationWrap">
+					<div class="logo">
+						<div class="imgWrap">
+							<img src="../images/logo.png" />
+						</div>
+					</div>
+
+						<!-- 네비게이션 메뉴 -->
+					<nav>
+						<ul class="navigation">
+						<div class="bannerBox mot2">
+							<ul class="theory navigation-switch">
+								<li class="root">
+									<a class="rootA" href="">ciat소개</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">모집공고</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">전문정보</a>
+								</li>
+								<li class="root">
+									<a class="rootA" href="">알림정보</a>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</ul>
+					</nav>
+					<div class="uber">
+						<div class="uberButton">
+							<a><i class="fal fa-bars"></i></a>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="headerDoor navigation-switch">
+						<div class="container">
+							<div class="uberSection">
+											<ul class="uberMenu">
+												<li class="uberColumn">
+													<ul>
+														<!--베스티안치과-->
+														<li><a href="http://www.yangak.com/new/intro/index.php">베스티안 치과 소개</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index1.php">대표원장 인사말</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index2.php">의료진 소개</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index3.php">진료안내</a></li>
+														<li><a href="http://www.yangak.com/new/intro/index4.php">오시는 길</a></li>
+
+													</ul>
+												</li>
+												<li class="uberColumn">
+													<ul>
+														<!--프로그램안내-->
+														<li><a href="http://www.yangak.com/new/implant01/index1.php">보험 임플란트</a></li>
+														<li><a href="http://www.yangak.com/new/implant01/index2.php">당뇨 임플란트</a></li>
+														<li><a href="http://www.yangak.com/new/implant01/index3.php">무치약 임플란트</a></li>
+
+
+													</ul>
+												</li>
+												<li class="uberColumn">
+													<ul>
+														<!--양악수술 -->
+															<li><a href="http://www.yangak.com/new/yangak/index.php">베스티안 양악수술</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index1.php">BOS SYSTEM</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index2.php">베스티안 선수술</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index3.php">BOS V라인수술</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index4.php">증상별 클리닉</a></li>
+															<li><a href="http://www.yangak.com/new/yangak/index10.php">자가수혈 시스템</a></li>
+													</ul>
+												</li>
+												<li class="uberColumn">
+													<ul>
+														<!-- <li>안면윤곽-->
+															<li><a href="http://www.yangak.com/new/v_clinic/index.php">베스티안 안면윤곽</a></li>
+															<li><a href="http://www.yangak.com/new/v_clinic/index1.php">증상별 클리닉</a></li>
+															<li><a href="http://www.yangak.com/new/v_clinic/index6.php">자가수혈 시스템</a></li>
+													</ul>
+												</li>
+											</ul>
+								</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="header-padding">
+
+			</div>
+
+			</div>
+		</div>
+	</header>
+  <div id="main">
+    <div class="container">
+      <div class="subP dy-box">
+					<div class="subPage">
+
+
+                    	<h2 class="b-bottom">모집공고</h2>
+                      <div class="recruitDetail bio">
+                        <h2 class="superHead">${dto.testName }</h2>
+                        <div class="detail-header">
+                     <p>
+                        <label>작성자 :</label><span>${dto.clientinfoName }</span><label>작성일:</label><span>${dto.testDate }</span>
+                     </p>
+                     <p>
+                        <label>조회수</label><span>${dto.testHit }</span>
+                     </p>
+                     <div class="divider"></div>
+
+                  </div>
+                  <div class="newRecruit">
+                    <div class="newRecruitHeader">
+                       <h2>공고정보</h2>
+                    </div>
+                    <div class="useBorderSection">
+                        <div class="newArticle">
+                           <label>총 모집인원</label>
+                           <div class="articleValue">
+                             <span>${dto.testMax }명</span>
+                           </div>
+                        </div>
+                        <div class="newArticle">
+                           <label>대상</label>
+                           <div class="articleValue">
+                             <span>${dto.testType2 }</span>
+                           </div>
+                        </div>
+                        <div class="newArticle">
+                           <label>지역</label>
+                           <div class="articleValue">
+                               <span>${dto.testLocation }</span>
+                           </div>
+                        </div>
+                        <div class="newArticle">
+                           <label>BMI지수</label>
+                           <div class="articleValue">
+                              <c:choose>
+                                 <c:when
+                                    test="${dto.testStartbmi == 0 && dto.testEndbmi == 100 }">
+                                    <span>무관</span>
+                                 </c:when>
+                                 <c:otherwise>
+                                    <span>${dto.testStartbmi } ~ ${dto.testEndbmi }</span>
+                                 </c:otherwise>
+                              </c:choose>
+                           </div>
+                        </div>
+                        <div class="newArticle">
+                           <label>성별</label>
+                           <div class="articleValue">
+                              <span>${dto.testGender }</span>
+                           </div>
+                        </div>
+                        <div class="newArticle">
+                           <label>나이</label>
+                           <div class="articleValue">
+                              <c:choose>
+                                 <c:when test="${dto.testStartage == 0 && dto.testEndage == 100 }">
+                                    <span>무관</span>
+                                 </c:when>
+                                 <c:when test="${dto.testStartage == 0 }">
+                                    <span><span>~</span> 만 ${dto.testEndage } 세 </span>
+                                 </c:when>
+                                 <c:when test="${dto.testEndage == 100 }">
+                                    <span>만 ${dto.testStartage } 세 <span>~</span></span>
+                                 </c:when>
+                                 <c:otherwise>
+                                    <span>만 ${dto.testStartage } 세 <span>~</span>만 ${dto.testEndage } 세 </span>
+                                 </c:otherwise>
+                              </c:choose>
+                           </div>
+                        </div>
+                        <div class="newArticle">
+                           <label>시험종류</label>
+                           <div class="articleValue">
+                              <span>${dto.testType }</span>
+                           </div>
+                        </div>
+                        <div class="newArticle">
+                           <label>사례금</label>
+                           <c:choose>
+                           	<c:when test="${dto.testFee == 'SMS' }">
+	                           <div class="articleValue innerButton">
+	                             <button type="button" class="mobilethrow" onclick="smsSend()" id="fee">참여비 문자로 받기</button>
+	                           </div>
+                           	</c:when>
+                           	<c:otherwise>
+	                           	<div class="articleValue">
+	                              <span id="fee" style="font-size: 13px;">${dto.testFee }</span>
+	                            </div>
+                           	</c:otherwise>
+                           </c:choose>
+                        </div>
+                     </div>
+
+                     <div class="newRecruitHeader">
+                        <h2>시험기간</h2>
+                     </div>
+                     <div class="noneBorderSection">
+                       <div class="newArticle">
+                            <label>1기 시험 일자</label>
+                            <div class="articleValue">
+                               <fmt:formatDate value="${dto.testStartdate1 }" var="startdate1" pattern="yyyy-MM-dd" />
+                               <fmt:formatDate value="${dto.testStartdate1 }" var="startdate1E" pattern="E요일" />
+                               <fmt:formatDate value="${dto.testEnddate1 }" var="enddate1" pattern="yyyy-MM-dd" />
+                               <fmt:formatDate value="${dto.testEnddate1 }" var="enddate1E" pattern="E요일" />
+                               <p>
+                                 <span class="date">${startdate1 }</span><span class="date"> ${startdate1E}</span>
+                                 <span>~</span>
+                                 <span class="date">${enddate1 }</span><span class="date"> ${enddate1E}</span>
+                               </p>
+                            </div>
+                         </div>
+                         <c:if test="${dto.testStartdate2 ne null }">
+	                           <div class="newArticle">
+	                              <label>2기 시험 일자</label>
+	                              <div class="articleValue">
+		                              <fmt:formatDate value="${dto.testStartdate2 }" var="startdate2" pattern="yyyy-MM-dd" />
+		                              <fmt:formatDate value="${dto.testStartdate2 }" var="startdate2E" pattern="E요일" />
+		                              <fmt:formatDate value="${dto.testEnddate2 }" var="enddate2" pattern="yyyy-MM-dd" />
+		                              <fmt:formatDate value="${dto.testEnddate2 }" var="enddate2E" pattern="E요일" />
+		                              <p>
+		                              	<span class="date">${startdate2 }</span><span class="date"> ${startdate2E}</span>
+		                              	<span>~</span>
+		                              	<span class="date">${enddate2 }</span><span class="date"> ${enddate2E}</span>
+		                              </p>
+		                           </div>
+	                           </div>
+	                        </c:if>
+                          <c:if test="${dto.testStartdate3 ne null }">
+	                           <div class="newArticle">
+	                              <label>3기 시험 일자</label>
+	                              <div class="articleValue">
+		                              <fmt:formatDate value="${dto.testStartdate3 }" var="startdate3" pattern="yyyy-MM-dd" />
+		                              <fmt:formatDate value="${dto.testStartdate3 }" var="startdate3E" pattern="E요일" />
+		                              <fmt:formatDate value="${dto.testEnddate3 }" var="enddate3" pattern="yyyy-MM-dd" />
+		                              <fmt:formatDate value="${dto.testEnddate3 }" var="enddate3E" pattern="E요일" />
+		                              <p>
+		                              	<span class="date">${startdate3 }</span><span class="date"> ${startdate3E}</span>
+		                             	<span>~</span>
+		                              	<span class="date">${enddate3 }</span><span class="date"> ${enddate3E}</span>
+		                              </p>
+		                           </div>
+	                           </div>
+	                        </c:if>
+                          <c:if test="${dto.testStartdate4 ne null }">
+	                           <div class="newArticle">
+	                              <label>4기 시험 일자</label>
+	                              <div class="articleValue">
+		                              <fmt:formatDate value="${dto.testStartdate4 }" var="startdate4" pattern="yyyy-MM-dd" />
+		                              <fmt:formatDate value="${dto.testStartdate4 }" var="startdate4E" pattern="E요일" />
+		                              <fmt:formatDate value="${dto.testEnddate4 }" var="enddate4" pattern="yyyy-MM-dd" />
+		                              <fmt:formatDate value="${dto.testEnddate4 }" var="enddate4E" pattern="E요일" />
+		                              <p>
+		                              	<span class="date">${startdate4 }</span><span class="date"> ${startdate4E}</span>
+		                              	<span>~</span>
+		                              	<span class="date">${enddate4 }</span><span class="date"> ${enddate4E}</span>
+		                              </p>
+		                           </div>
+	                           </div>
+	                        </c:if>
+                          <div class="newArticle">
+	                           <label>시험 종료 일자</label>
+	                           <div class="articleValue">
+	                              <fmt:formatDate value="${dto.testEnddate }" var="endDateE"
+	                                 pattern="E요일" />
+	                              <p><span class="date">${dto.testEnddate }</span><span class="date"> ${endDateE }</span></p>
+	                           </div>
+	                        </div>
+                     </div>
+                     <div class="newRecruitHeader">
+                        <h2>신체검사 기간</h2>
+                     </div>
+                     <div class="noneBorderSection">
+                        <div class="newArticle largeSet largeSet2" style="border-width: 1px;">
+                           <label class ="dateDycheck">신체검사 기간</label>
+                           <c:set var="deadLine" value="${dto.testDeadline }" />
+                           <c:set var="deadLineDate">
+                              <fmt:formatDate value="${deadLine}" pattern="yyyy-MM-dd" />
+                           </c:set>
+                           <div class="articleValue">
+                              <p>${dto.testScreeningStartdate } <span>~</span> ${deadLineDate }
+                              </p>
+                                 <button class="exceptDateBtn">달력 보기</button>
+
+                              <div class="exceptDateContainer form mot4">
+                                 <div class="exceptDateWrap">
+                                    <div id="datepicker"></div>
+                                 </div>
+									<div class="holderBox" style="display: block;">
+										<c:set var = "splitText" value = "${fn:split(dto.testScreeningDate, ',')}"/>
+										<c:forEach var= "screen" items="${splitText}" varStatus="g" >
+											<c:set var = "splitText2" value = "${fn:split(screen,'|' )}"/>
+											<c:set var = "dateText" value = "${fn:trim(splitText2[0]) }"/>
+											<c:set var = "timeText" value = "${splitText2[1] }"/>
+											<div class="articleHolder ${dateText }" style="display: none;">
+												<div class="article">
+													<div class="dateSet dyLabel" id ="dyLabel">
+														<label class="point">${dateText }</label>
+														<div class="dateRight">
+															<label class="labelRadio" style ="cursor: default;">
+																<span>${timeText }</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</c:forEach>
+									</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="newRecruitHeader" style="margin: 40px 0;">
+                        <h2>시험 상세정보</h2>
+                     </div>
+                      <div class="content">
+                     <div class="content-grid">
+                       <c:if test="${fn:length(filelist) > 0}">
+                          <h2>필수확인 첨부파일</h2>
+                       </c:if>
+                       <c:forEach items="${filelist}" var="file" varStatus="status">
+                       <c:url var ="fileDownUrl" value="recruitDownload">
+                         <c:param name="path" value="${file.testAttachPath}" />
+                         <c:param name="fileName" value="${file.testAttachModifyName}" />
+                         <c:param name="OFN" value="${file.testAttachName}" />
+                       </c:url>
+                          <div class="attachmentGrid">
+                             <div class="buttonDiv" onclick="location.href='${fileDownUrl }'">
+                                <button>${file.testAttachName}</button>
+                                <!-- <label>.txt</label> -->
+                                <i class="far fa-arrow-alt-circle-down"></i>
+                             </div>
+                          </div>
+                       </c:forEach>
+                    </div>
+                   </div>
+
+                     <div class="newRecruitHeader" style="margin: 40px 0;">
+                        <h2>실시기관 정보</h2>
+                     </div>
+
+                     <div class="businessCard">
+                        <div class="companyInfo">
+                           <p>
+                              <label>실시기관</label><span>${dto.clientinfoName }</span>
+                           </p>
+                           <p>
+                              <label>시험책임자</label><span>${dto.testDirectorName }</span>
+                           </p>
+                           <p>
+                              <label>연락처</label><span>${dto.memberPhone }</span>
+                           </p>
+                           <p>
+                              <label>이메일</label><span>${dto.memberEmail }</span>
+                           </p>
+                           <p class="last">
+                              <label>주소</label><span>${dto.clientinfoAddress }</span>
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="newRecruitHeader" style="margin-top: 40px;">
+                         <h2>의뢰자 정보</h2>
+                      </div>
+
+                      <div class="businessCard">
+                        <div class="companyInfo">
+                           <p>
+                              <label>의뢰자</label><span>${dto.testClientName }</span>
+                           </p>
+                           <p>
+                              <label>담당자</label><span>${dto.testClientDirectorName }</span>
+                           </p>
+                           <p class="last" style="margin-bottom: 10px;">
+                              <label>연락처</label><span>${dto.testClientTel }</span>
+                           </p>
+                           <p class="last">
+                              <label>주소</label><span>${dto.testClientAddress }</span>
+                           </p>
+                        </div>
+                     </div>
+
+                     <c:set var="now" value="<%=new java.util.Date()%>" />
+                     <c:set var="deadLine" value="${dto.testDeadline }" />
+                     <c:set var="sysYear">
+                        <fmt:formatDate value="${now}" pattern="yyyyMMddHHmm" />
+                     </c:set>
+                     <c:set var="deadLineDate">
+                        <fmt:formatDate value="${deadLine}" pattern="yyyyMMddHHmm" />
+                     </c:set>
+                     <c:set var="deadLineBlack">
+                        <fmt:formatDate value="${dto.deadLineBlack}"
+                           pattern="yyyyMMddHHmm" />
+                     </c:set>
+
+                     <c:choose>
+
+                        <c:when test="${member.member_type == 'A' }">
+                           <div class="button-box">
+                              <button onclick="location.href='recruitModify?test_id=${test_id}' ">수정하기</button>
+                              <button class="red" id="blackCancel" onclick="recruitDeleteConfirm() ">삭제하기</button>
+                              <c:choose>
+								<c:when test="${dto.testType == '임상'}">
+									<button class="ghostButton" onclick="location.href = '/recruit/recruitList' ">목록으로</button>
+								</c:when>
+								<c:when test="${dto.testType == '생동성' }">
+									<button class="ghostButton" onclick="location.href = '/recruit/recruitListBio' ">목록으로</button>
+								</c:when>
+							</c:choose>
+                           </div>
+                        </c:when>
+                        <c:when test="${member.member_type == 'C' }">
+                        	<div class="button-box">
+							<c:choose>
+								<c:when test="${dto.testType == '임상'}">
+									<button class="ghostButton" onclick="location.href = '/recruit/recruitList' ">목록으로</button>
+								</c:when>
+								<c:when test="${dto.testType == '생동성' }">
+									<button class="ghostButton" onclick="location.href = '/recruit/recruitListBio' ">목록으로</button>
+								</c:when>
+							</c:choose>
+							</div>
+						</c:when>
+                        <c:otherwise>
+                           <c:choose>
+                              <c:when test="${deadLineDate >= sysYear && dto.maxBol == 'false'}">
+                                 <div class="button-box">
+                                    <c:choose>
+                                       <c:when test="${dto.testBol == 'false' }">
+                                          <button id="testPick"
+                                             class="ghostButton <c:if test="${dto.bol == true }" >active</c:if>"
+                                             data-id="${dto.testId }">
+                                             관심공고 <i class="fas fa-star"></i>
+                                          </button>
+                                       </c:when>
+                                       <c:otherwise>
+                                          <button class="scButton" id="Cancel"
+                                             onclick="location.href='recruitScreeningModify?test_id=${dto.testId}'">신체검사
+                                             일정 수정</button>
+                                       </c:otherwise>
+                                    </c:choose>
+                                    <c:choose>
+                                       <c:when test="${dto.testBol == 'false' && dto.testType == '임상'}">
+                                          <button class="normalButton"
+                                             onclick="location.href='recruitGenderCheck?test_id=${dto.testId}' ">지원하기</button>
+                                              <button class="ghostButton"
+                                             onclick="location.href = '/recruit/recruitList' ">목록으로</button>
+                                       </c:when>
+                                       <c:when test="${dto.testBol == 'false' && dto.testType == '생동성' }">
+                                       <button class="normalButton"
+                                             onclick="location.href='recruitGenderCheck?test_id=${dto.testId}' ">지원하기</button>
+                                              <button class="ghostButton"
+                                             onclick="location.href = '/recruit/recruitListBio' ">목록으로</button>
+                                       </c:when>
+                                       <c:otherwise>
+                                          <c:choose>
+                                             <c:when test="${deadLineBlack  <= sysYear }">
+                                                <button class="red" id="blackCancel"
+                                                   onclick="recruitBlackCancel() ">취소하기</button>
+                                             </c:when>
+                                             <c:otherwise>
+                                                <button class="red" id="Cancel"
+                                                   onclick="recruitCancel() ">취소하기</button>
+                                             </c:otherwise>
+                                          </c:choose>
+                                       </c:otherwise>
+                                    </c:choose>
+                                 </div>
+                              </c:when>
+                              <c:when
+                                 test="${dto.maxBol == 'true' && dto.testBol == 'true' && deadLineDate >= sysYear }">
+                                 <div class="button-box">
+                                    <button class="scButton" id="Cancel"
+                                       onclick="location.href='recruitScreeningModify?test_id=${dto.testId}'">신체검사
+                                       일정 수정</button>
+                                    <c:choose>
+                                       <c:when test="${deadLineBlack  <= sysYear }">
+                                          <button class="red" id="blackCancel"
+                                             onclick="recruitBlackCancel() ">취소하기</button>
+                                       </c:when>
+                                       <c:otherwise>
+                                          <button class="red" id="Cancel" onclick="recruitCancel() ">취소하기</button>
+                                       </c:otherwise>
+                                    </c:choose>
+                                 </div>
+                              </c:when>
+                              <c:otherwise>
+                                 <div class="dateOver">
+                                    <h2>위 공고는 마감되었습니다.</h2>
+                                    <p>다른 공고를 열람하시려면 목록버튼을 눌러주세요.</p>
+                                    <div class="button-box">
+                                       <button onclick="location.href = '/recruit/recruitList' ">목록으로</button>
+                                    </div>
+                                 </div>
+                              </c:otherwise>
+                           </c:choose>
+                        </c:otherwise>
+                     </c:choose>
+                     <div class="author-info"></div>
+
+
+                  </div>
+
+                      </div>
+
+
+
+  </div>
+  </div>
+</div>
+  <footer>
+  	<div class="footer-wrap">
+  		<div class="imgWrap">
+  			<img src="../images/main/footer-logo.png" alt="CIAT 로고" />
+  		</div>
+
+  		<div class="footer-content">
+  			<div class="footer-header">
+  				<p>
+  					개인정보 취급방침 | 이용약관
+  				</p>
+  			</div>
+  			<div class="footer-body">
+  				<p>
+  					(주) Fineinsight
+  				</p>
+  				<p>
+  					04798 서울시 성동구 성수이로 22길 37 성수동 아크밸리 401, 402 (서울산업진흥원 성수 IT 종합센터)
+  				</p>
+
+  				<p>
+  					대표자: 신현경 | 사업자등록번호: 211-88-93785
+  				</p>
+  			</div>
+
+  			<div class="footer-bottom">
+  				<p>
+  					Copyright &copy; Fineinsight all rights reserved
+  				</p>
+  			</div>
+  		</div>
+  	</div>
+
+  </footer>
+
+  <script src="../js/vendor/jquery-3.4.1.min.js"></script>
+     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="../js/vendor/TweenMax.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../js/header.js"></script>
+    	<script src="../js/vendor/sweetalert2.all.min.js"></script>
+      <script src="../js/vendor/daumContentVIew.js"></script>
+      <script src="../js/vendor/animatedScroll.js"></script>
+  <script type="text/javascript">
+  function smsSend(){
+    var testId = '${dto.testId }';
+    $.ajax({
+            url : "recruitPaySMS",
+            data : {
+               test_id : testId
+            },
+            type : 'post',
+            success : function(data) {
+
+             if(data.resultCode > 0){
+             swal("문자가 발송되었습니다.")
+           }else{
+             swal("문자 발송이 실패했습니다.")
+           }
+
+            },
+            error : function() {
+       swal("문자 발송이 실패했습니다.")
+            }
+     });
+ }
+
+    $(function() {
+
+      if($('.useBorderSection .newArticle:nth-of-type(8) .articleValue').children('#fee').html()=="시험실시기관으로 유선문의 또는 방문시 안내") {
+    	 		$('.useBorderSection .newArticle:nth-of-type(7)').addClass('double')
+    	 		$('.useBorderSection .newArticle:nth-of-type(8)').addClass('double2');
+    	 	}
+
+    	  $( '.scrollTop' ).click( function() {
+    		  $("#scroll").animatedScroll({easing: "easeInQuad"});
+    		});
+
+         $(".btn_float").removeClass("show");
+         $('#sideContent').find('.is-checked').removeClass('is-checked');
+
+         <c:if test="${dto.testType == '임상' }">
+	         $('#sideContent>.contentElement:eq(0)').addClass('is-checked');
+	         $('.sub-banner').css({
+	            background : "url(../resources/images/recruit01.png) no-repeat"
+	         });
+         </c:if>
+         <c:if test="${dto.testType == '생동성' }">
+	         $('#sideContent>.contentElement:eq(1)').addClass('is-checked');
+	         $('.sub-banner').css({
+	            background : "url(../resources/images/recruit02.png) no-repeat"
+	         });
+         </c:if>
+
+         function addComma(num) {
+            var regexp = /\B(?=(\d{3})+(?!\d))/g;
+            return num.toString().replace(regexp, ',');
+         }
+
+         var fee = $('#fee').html();
+         if(fee != '시험실시기관으로 유선문의 또는 방문시 안내' && fee != '참여비 문자로 받기' ){
+	         var feeC = addComma(fee);
+	         $('#fee').html(feeC + '원');
+         }
+
+
+
+
+    });
+    var cancelConfirm;
+     var blackCancelConfirm;
+
+     function recruitCancel() {
+
+        const cancelConfirm = swal.mixin({
+
+        })
+
+        cancelConfirm({
+           title : '취소하시겠습니까?',
+           type : 'warning',
+           showCancelButton : true,
+           confirmButtonText : '확인',
+           cancelButtonText : '취소',
+           reverseButtons : true,
+           //allowEnterKey: false
+           focusCancel: true
+        }).then(function(result) {
+           if (result.value) {
+              cancelConfirm('취소되었습니다.', '', 'success').then(function() {
+                 location.href = 'recruitCancle?test_id=${test_id}';
+              })
+           } else {
+              /* cancelConfirm(
+                    '취소를 취소',
+                      '',
+                      'error') */
+           }
+        })
+     }
+
+     function recruitBlackCancel() {
+
+        const blackCancelConfirm = swal.mixin({
+
+        })
+
+        blackCancelConfirm({
+           title : '지금 시험참여를 취소하시면 해당기관의 추후 시험 참여가 어려울 수 있습니다. 취소하시겠습니까?',
+           type : 'warning',
+           showCancelButton : true,
+           confirmButtonText : '확인',
+           cancelButtonText : '취소',
+           reverseButtons : true,
+           //allowEnterKey: false,
+           focusCancel: true
+        })
+              .then(
+                    function(result) {
+                       if (result.value) {
+                          blackCancelConfirm('취소되었습니다.', '',
+                                'success')
+                                .then(
+                                      function() {
+                                         location.href = 'recruitBlackCancle?test_id=${test_id}';
+                                      })
+                       } else {
+                          /* blackCancelConfirm(
+                                '취소를 취소',
+                                '',
+                                'error') */
+                       }
+                    })
+     }
+
+     function recruitDeleteConfirm() {
+
+        const recruitDeleteConfirm = swal.mixin({
+
+        })
+
+        recruitDeleteConfirm({
+           title : '정말 공고를 삭제하시겠습니까?',
+           type : 'warning',
+           showCancelButton : true,
+           confirmButtonText : '확인',
+           cancelButtonText : '취소',
+           reverseButtons : true,
+           focusCancel: true
+        }) .then(function(result) {
+          if (result.value) {
+             recruitDeleteConfirm('삭제되었습니다.', '', 'success').then(
+               function() {
+                     location.href = '/admin/testDelete?test_id=${test_id}';
+                   })
+          } else {
+             /* blackCancelConfirm(
+                   '취소를 취소',
+                   '',
+                   'error') */
+          }
+       })
+     }
+
+     var memberId = '${member.member_id}';
+     console.log(memberId);
+
+     /* 찜하기 JS */
+     $(document).on('click', '#testPick', function() {
+
+        var dataId = $(this).data("id");
+
+        if (typeof memberId == "undefined") {
+           swal("로그인 후 관심공고를 추가 하실 수 있습니다.");
+        } else {
+           if ($("#testPick").hasClass("active") === false) {
+              $.ajax({
+                 url : "recruitPickAjax",
+                 data : {
+                    test_id : dataId,
+                    member_id : memberId
+                 },
+                 type : 'post',
+                 success : function(data) {
+
+                 if(data.result > 0){
+                      $("#testPick").addClass("active");
+               }else{
+                 swal("공고에 이미 참여하셔서 관심공고 설정을 하실 수 없습니다.")
+               }
+
+                 },
+                 error : function() {
+                    swal("error");
+                 }
+              });
+           } else {
+              $.ajax({
+                 url : "recruitPickDeleteAjax",
+                 data : {
+                    test_id : dataId,
+                    member_id : memberId
+                 },
+                 type : 'post',
+                 success : function(data) {
+                    $("#testPick").removeClass("active");
+                 },
+                 error : function() {
+                    swal("error");
+                 }
+              });
+           }
+        }
+     });
+
+
+
+
+  </script>
+  <script type="text/javascript">
+
+ var availableDates = new Array();
+ var value = "";
+
+ $(function(){
+
+   // Get the current date at midnight.
+   var now = new Date();
+   var todayAtMidn = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+   function nowDate(date){
+     var thismonth = date.getMonth()+1;
+     var thisday = date.getDate();
+     if(thismonth<10){
+       thismonth = "0"+thismonth;
+     }
+     if(thisday<10){
+       thisday = "0"+thisday;
+     }
+       ymd = date.getFullYear() + "-" + thismonth + "-" + thisday;
+
+       return ymd;
+   }
+
+   //선택가능 날짜
+   $(".point").each(function(idx){
+
+     // Set specificDate to a specified date at midnight.
+     value = $(this).html();
+     var screeningDate = new Date(value);
+
+     if(screeningDate.getTime() > todayAtMidn.getTime()){
+       availableDates.push(value);
+     }
+   });
+
+   //availableDates = ["2018-05-18", "2018-05-13"];
+   function available(date) {
+     var thismonth = date.getMonth()+1;
+     var thisday = date.getDate();
+     if(thismonth<10){
+       thismonth = "0"+thismonth;
+     }
+     if(thisday<10){
+       thisday = "0"+thisday;
+     }
+       ymd = date.getFullYear() + "-" + thismonth + "-" + thisday;
+
+       if ($.inArray(ymd, availableDates) >= 0) {
+           return [true,"",""];
+       } else {
+           return [false,"",""];
+       }
+   }
+
+   $("."+availableDates[0]).css('display' , "block");
+
+   $('#datepicker').datepicker({
+     dateFormat: "yy-mm-dd",
+     showMonthAfterYear: true ,
+     mode :"multiple",
+     dayNames : ["일","월", "화", "수", "목",  "금", "토"],
+     dayNamesMin : ["일","월", "화", "수", "목",  "금", "토"],
+     dayNamesShort : ["일","월", "화", "수", "목",  "금", "토"] ,
+     monthNames : [ "1월", "2월", "3월", "4월",  "5월", "6월", "7월", "8월", "9월", "10월",  "11월", "12월" ],
+     beforeShowDay: available,
+     defaultDate : availableDates[0],
+     onSelect: function (dateText, inst){
+       $('.holderBox').css('display' , "block");
+       $('.articleHolder').css('display' , "none");
+       $('.'+dateText).css('display' , "block");
+       $('.screeningNone').css('display' , "none");
+     }
+   });
+
+      $(document).on("click",function(e){
+
+        if(!$('.exceptDateContainer.form.mot4').find($(e.target)).length > 0){
+          if (!$(e.target).is('.exceptDateBtn') && !$(e.target).is('.exceptDateContainer.form.mot4')&& !$(e.target).is('.ui-corner-all')&& !$(e.target).is('.ui-icon')) {
+            if($('.exceptDateContainer.form.mot4').hasClass('active')){
+              if (!$(e.target).is('.exceptDateContainer.form.mot4')) {
+                $('.exceptDateContainer.form.mot4').removeClass('active');
+               }
+               }
+            }
+        }
+      })
+      $('.exceptDateBtn').on("click",function(){
+        if(!$('.exceptDateContainer.form.mot4').hasClass('active')){
+          $('.exceptDateContainer.form.mot4').addClass('active');
+        } else{
+          $('.exceptDateContainer.form.mot4').removeClass('active');
+        }
+      });
+
+});
+  </script>
+
+</body>
+
+</html>
