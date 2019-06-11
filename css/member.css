@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+section.join {
+
+}
+
+section .sectionHeader {
+
+}
+
+section .sectionHeader h2 {
+  text-align: center;
+    margin: 30px 0 8px;
+    padding-bottom: 8px;
+    font-size: 30px;
+    color: #3caa69;
+    letter-spacing: 0.41px;
+    position: relative;
+    font-weight: bold;
+}
+
+section .sectionHeader p {
+  text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+    word-spacing: 0px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: relative;
+}
+
+.memberProcedure {
+  margin: 15px 0 20px 0;
+}
+
+.memberProcedure .article  {
+  float: left;
+    width: calc(100%/ 4);
+    text-align: center;
+    padding: 14px 19px;
+    border: 0px solid #d9d4d4;
+    font-size: 16px;
+    border-width: 1px 1px 1px 1px;
+}
+
+.memberProcedure .article.selected {
+  box-shadow: 0 -7.5px 0 0 #3caa69 inset;
+}
+
+.memberProcedure .article:first-of-type {
+  border-width: 1px 0px 1px 1px;
+}
+
+.memberProcedure .article:nth-of-type(2) {
+  border-width: 1px 1px 1px 1px
+}
+
+.memberProcedure .article:nth-of-type(3) {
+  border-width: 1px 0px 1px 0px;
+}
+
+.memberProcedure .article span {
+  font-size:17px;
+}
+
+.memberProcedure .article span a {
+  color: #3caa69;
+    font-weight: bold;
+}
+
+section.join .join-type {
+  padding:40px 25%;
+}
+
+section.join .join-type div {
+  float: left;
+    width: calc(100%/ 2);
+    padding: 0;
+    cursor: pointer;
+}
+
+section.join .join-type div img {
+  width: 100%;
+    height: auto;
+    padding: 0 41px;
+}
+
+section.join .join-type div h2 {
+  text-align: center;
+margin: 0;
+padding: 20px 0 0;
+font-size: 20px;
+}
+
+section.join .terms {
+  padding: 20px 0 50px;
+}
+
+section.join .terms h2 {
+  margin-bottom: 0;
+    font-size: 20px;
+}
+
+section.join .terms hr {
+  margin: 10px 0 20px;
+    border-top: 1px solid #a5a5a5;
+}
+
+section.join .terms .section.join .terms {
+      margin-bottom: 55px;
+}
+
+section.join .terms .section.join .terms .terms-area {
+
+}
