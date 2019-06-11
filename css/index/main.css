@@ -51,7 +51,7 @@
   float: left;
   margin: 0 10px 10px 0;
   padding: 20px 30px;
-  border: 1px solid #C2C2C2;
+  border: none;
   box-shadow: 0px 0px 3px 1.5px rgba(183, 183, 183, 0.3);
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -120,7 +120,7 @@ span.arrow:before {
   transform: rotate(-55deg);
   position: absolute;
   top: 23px;
-  left: 5px;
+  left: 1px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -136,7 +136,7 @@ span.arrow:after {
   background: #434343;
   top: 29px;
   position: absolute;
-  left: -8px;
+  left: -13px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -280,7 +280,7 @@ span.arrow:after {
 
 .image-textWrap2 .textWrap .mainText>.btnWrap button::after{
   content: '';
-  height: 1.5px;
+  height: 2px;
   width: 25px;
   display: block;
   background: #fff;
@@ -325,7 +325,7 @@ span.arrow:after {
 .image-textWrap2 .textWrap .mainText>.btnWrap button span {
   color: white;
   font-weight: 350;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.3px;
 
