@@ -1,5 +1,206 @@
 @charset "UTF-8";
 
+.b-bottom {
+  border-bottom: 1.4px solid #95989a;
+  margin-bottom: 20px;
+}
+
+.info_border {
+  width: 55px;
+  border-top: 4px solid #97B9F5;
+}
+
+p.sourceId a:first-of-type {
+  padding-right: 4px;
+  letter-spacing: 0.11px
+}
+
+div.infoEdu-downBox {
+  letter-spacing: -1px;
+  border: 1px solid #4985ed;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  text-align: center;
+  clear: both;
+  margin-bottom: 15px;
+  font-size: 14px;
+  max-width: 300px;
+}
+
+a.infoEdu-downArea {
+  display: block;
+  color: #4985ed !important;
+}
+
+.buttonBox {
+  text-align: center;
+  margin: 45px 0;
+}
+
+.buttonBox input {
+  padding: 15px 31px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  min-width: 105px;
+  background: #4985ed;
+  cursor: pointer;
+}
+
+/* 아코디언*/
+@charset "UTF-8";
+
+div.accordian {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 3px;
+  cursor: pointer;
+}
+
+div.accordian:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+div.accordian.start {
+  border-top: 2px solid black;
+  margin-top: 35px;
+}
+
+div.accordian .question {
+  font-size: 18px;
+  font-weight: bold;
+  word-spacing: 0.5px;
+  margin: 0 5px 0;
+  float: left;
+}
+
+div.accordian .questionContent {
+  margin: 0;
+  font-weight: bold;
+  float: left;
+  line-height: 27px;
+  margin-left: 8px;
+}
+
+div.accordian i {
+  float: right;
+  margin: 7px 3px 0 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+div.accordianContent {
+  padding: 5px 10px;
+  background-color: #eef2f5;
+}
+
+div.accordianContent:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+div.accordianContent .answer {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4985ed;
+  margin: 17px 0 0 12px;
+}
+
+div.accordianContent .answerContent {
+  /* float: left;
+
+width: calc(100% - 24px); */
+}
+
+div.accordianContent .answerContent p {
+  display: block;
+  margin: 20px 20px 20px 40px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+div.accordianContent .answerContent a {
+  color: #4985ed;
+}
+
+div.accordianContent .answerContent br {}
+
+div.accordian_rotate i {
+  transform: rotate(180deg);
+}
+
+.accordian_layer i {
+  transition: all 0.3s ease-out;
+}
+
+div.accordian_select {
+  background: #4985ed;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+div.accordian.accordian_select>p {
+  color: #ffffff;
+}
+
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 탭 기본 틀 */
+.tab-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-link {
+  margin-right: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  display: inline-block;
+  background-color: #b3b3b3;
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.tab-link:last-child {
+  margin-right: 0;
+}
+
+.tab-link:hover {
+  color: #6d6d6d;
+}
+
+.tab-link.is-active {
+  color: white;
+  background-color: #4985ed;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.is-active {
+  display: block;
+  /* padding: 20px; */
+}
+
+.subPage h2 {
+  font-size: 27px;
+  padding-bottom: 10px;
+  color: #4985ed;
+  font-weight: bold;
+  letter-spacing: 0.41px;
+}
+
 /* 임상시험 제대로 알기 */
 .contentBox h2 {
   margin: 30px 0 15px;
@@ -281,12 +482,38 @@ hr {
   .contentTableWrap .contentHeader.small.blue {
     text-align: center;
   }
+
+  .tableTitle {
+    display: none;
+  }
+
+  .infoTable {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .imgTextBox {
+    display: block;
+  }
+
+  .imgTextWrap {
+    margin-right: 0;
+  }
+
+  .halfTextBox {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
 
   .subP h2 {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .contentBox h2 {
+    font-size: 20px;
   }
 
   .imgWrap.full .imgBox {
@@ -326,5 +553,8 @@ hr {
 
   .contentTableWrap .contentBody p {
     line-height: 24px;
+  }
+  .contentWrap .sourceId {
+    width: 100%;
   }
 }
