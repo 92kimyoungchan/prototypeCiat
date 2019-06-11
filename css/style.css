@@ -115,12 +115,25 @@
     url('../fonts/NanumSquareEB?#iefix') format('embedded-opentype');
 }
 
+
+@font-face {
+  font-family: 'Righteous-Regular';
+  font-style: Regular;
+  font-weight: 400;
+  src:local(※),
+    url("../fonts/Righteous-Regular.woff") format('woff'),
+    url('../fonts/NanumSquareEB?#iefix') format('embedded-opentype');
+}
+
+Righteous-Regular
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 .font-normal{
   font-weight: normal;
 }
-
+.logo-font {
+    font-family: 'Righteous-Regular';
+}
 html, body {
   margin: 0 auto;
   font-family: 'Noto Sans CJK KR';

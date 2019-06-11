@@ -294,6 +294,7 @@ span.arrow:after {
 
 .image-textWrap2 .textWrap .mainText>.btnWrap button span.logo-font {
     font-size: 30px;
+    margin-right: 3px;
 }
 
 @media only screen and (max-width: 1310px) {
